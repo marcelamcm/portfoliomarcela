@@ -1,0 +1,118 @@
+/* Marcela Macedo — Portfolio
+   Direction: "Above the Fold" — Millls-inspired hero.
+   Single committed visual world: near-monochrome, huge grotesque type,
+   scattered rotated photo collage, one red accent. See README for status. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #FFFFFF;
+  color: #0A0A0A;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono { font-family: ui-monospace, "SF Mono", "Roboto Mono", monospace; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid #0A0A0A; outline-offset: 2px; }
+
+/* ---------------- nav ---------------- */
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 28px;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1.5px solid #0A0A0A; border-radius: 999px; padding: 9px 18px;
+  font-size: 14px; font-weight: 600;
+}
+.nav .right { display: flex; align-items: center; gap: 10px; }
+.avatar {
+  width: 38px; height: 38px; border-radius: 50%; background: #0A0A0A; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700;
+}
+
+/* ---------------- marquee ---------------- */
+.marquee-wrap {
+  border-top: 1.5px solid #0A0A0A; border-bottom: 1.5px solid #0A0A0A;
+  overflow: hidden; padding: 12px 0; background: #FFFFFF;
+}
+.marquee-track { display: flex; width: max-content; gap: 40px; }
+@media (prefers-reduced-motion: no-preference) {
+  .marquee-track { animation: scroll 26s linear infinite; }
+}
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track span {
+  font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  white-space: nowrap; display: flex; align-items: center; gap: 40px; color: #0A0A0A;
+}
+.marquee-track span::after { content: "\2726"; font-size: 10px; opacity: 0.5; margin-left: 40px; }
+
+/* ---------------- hero ---------------- */
+.hero {
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 20px;
+  padding: 64px 28px 96px; align-items: center;
+}
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr; padding-bottom: 320px; } }
+
+.hero h1 {
+  font-size: clamp(34px, 4.6vw, 58px); font-weight: 800; line-height: 1.02;
+  letter-spacing: -0.02em; margin: 0 0 26px; text-wrap: balance; max-width: 12ch;
+}
+.bioline {
+  font-size: 16.5px; line-height: 1.55; max-width: 44ch; color: #2B2B2B; margin: 0 0 34px;
+}
+.bioline .q { font-size: 20px; }
+.bioline strong { font-weight: 700; color: #0A0A0A; }
+
+.cta {
+  display: inline-flex; align-items: center; gap: 14px; border: 1.5px solid #0A0A0A;
+  border-radius: 999px; padding: 8px 8px 8px 22px; font-weight: 700; font-size: 14.5px;
+  background: #fff; cursor: pointer;
+}
+.cta .arrow {
+  width: 34px; height: 34px; border-radius: 50%; background: #0A0A0A; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 16px;
+}
+
+/* ---------------- collage ---------------- */
+.collage { position: relative; height: 440px; }
+@media (max-width: 900px) {
+  .collage { position: absolute; left: 0; right: 0; bottom: 0; height: 300px; padding: 0 12px; }
+}
+.ph {
+  position: absolute; border: 2px dashed #B9B4A6; border-radius: 20px;
+  background: #F5F2EA; box-shadow: 0 14px 28px rgba(10,10,10,0.12);
+  display: flex; align-items: flex-end; padding: 10px 12px; overflow: hidden;
+}
+.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph .tag {
+  position: relative; font-size: 10.5px; background: #fff; border: 1px solid #0A0A0A;
+  border-radius: 5px; padding: 2px 6px; color: #6b6656;
+}
+.ph1 { width: 220px; height: 260px; top: 0; right: 40px; transform: rotate(-4deg); z-index: 3; }
+.ph2 { width: 190px; height: 190px; top: 40px; right: 260px; transform: rotate(3deg); z-index: 2; }
+.ph3 { width: 170px; height: 210px; top: 200px; right: 0; transform: rotate(6deg); z-index: 4; }
+.ph4 { width: 180px; height: 150px; top: 260px; right: 220px; transform: rotate(-3deg); z-index: 1; }
+@media (max-width: 900px) {
+  .ph1 { width: 150px; height: 180px; top: 0; right: 10px; }
+  .ph2 { width: 130px; height: 130px; top: 10px; right: 170px; }
+  .ph3 { width: 120px; height: 150px; top: 150px; right: 0; }
+  .ph4 { display: none; }
+}
+
+.win {
+  position: absolute; background: #0A0A0A; color: #fff; border-radius: 999px;
+  padding: 10px 16px; font-size: 12.5px; font-weight: 700; box-shadow: 0 10px 20px rgba(10,10,10,0.25);
+  display: flex; align-items: center; gap: 7px; z-index: 5;
+}
+.win .dot { width: 6px; height: 6px; border-radius: 50%; background: #E3372A; flex: none; }
+.win1 { top: 190px; right: 340px; transform: rotate(-4deg); }
+.win2 { top: -14px; right: 250px; transform: rotate(3deg); }
+.win3 { top: 340px; right: 140px; transform: rotate(-2deg); }
+@media (max-width: 900px) {
+  .win1 { top: 60px; right: 130px; }
+  .win2 { top: -10px; right: 30px; }
+  .win3 { display: none; }
+}
