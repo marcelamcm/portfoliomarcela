@@ -15,11 +15,16 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
   filter pills (all / enterprise saas / luxury fashion / e-commerce) →
   **about** section (bio, real photobooth strip, why-work-with-me,
   beyond-the-screen) → footer (contact, pages, socials, big wordmark).
-  Work grid order: Moody's, Chloé, Chanel, Richemont.
-- ✅ **Case study pages** for **Moody's** ([moodys.html](moodys.html)) and
-  **Chloé** ([chloe.html](chloe.html)), sourced from `cv-master.md`. Chanel
-  and Richemont cards on the home page are marked "Case study coming soon"
-  until their pages are written.
+  Work grid order: Moody's, RadCode, Chloé, Chanel, Richemont.
+- ✅ **Case study pages** for **Moody's** ([moodys.html](moodys.html)),
+  **RadCode** ([radcode.html](radcode.html)), and **Chloé**
+  ([chloe.html](chloe.html)), sourced from `cv-master.md`. RadCode split out
+  of the Moody's page (2026-08-19) — Moody's stays a client case study,
+  RadCode is the separate rapid-prototyping / AI-tooling practice piece that
+  grew out of that engagement, framed as personal R&D rather than a client
+  deliverable. The two link to each other. Chanel and Richemont cards on the
+  home page are marked "Case study coming soon" until their pages are
+  written.
 - ✅ **About photo** — real photobooth strip at
   `assets/about/photobooth.png`, right-aligned next to the intro paragraph.
 - ✅ **Tag pills** — Moody's card/case-study uses an `AI` tag instead of
@@ -64,6 +69,7 @@ Marcela's been adding them.
 ```
 index.html                 home page
 moodys.html                 Moody's case study
+radcode.html                 RadCode / AI-tooling practice piece
 chloe.html                   Chloé case study
 styles.css                     all styles (dark theme, Archivo + Inter)
 assets/projects/<brand>/          one folder per brand, project imagery

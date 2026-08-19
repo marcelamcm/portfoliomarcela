@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RadCode: Scaling AI-Assisted Prototypes · Marcela Macedo</title>
+  <meta name="description" content="A personal practice piece: building RadCode, a rapid-prototyping monorepo, and investigating what actually drives AI-assisted workflow costs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-name display">marcela macedo</a>
+    <div class="nav-links">
+      <a href="index.html#work">work</a>
+      <a href="index.html#about">about me</a>
+    </div>
+  </nav>
+
+  <div class="case-hero">
+    <a href="index.html#work" class="case-back">&larr; back to work</a>
+    <div class="case-tags">
+      <span class="tag-pill">AI Tooling</span>
+      <span class="tag-pill">Rapid Prototyping</span>
+      <span class="tag-pill mono">RadCode</span>
+    </div>
+    <h1 class="display">radcode: scaling ai-assisted prototypes</h1>
+    <p class="case-role">A personal practice piece, built alongside the <a href="moodys.html">Moody&rsquo;s / Nagarro Digital Ventures engagement</a>, not a client deliverable.</p>
+
+    <div class="case-meta-grid">
+      <div><span>Role</span>Product Designer, practice lead</div>
+      <div><span>Context</span>Personal R&amp;D, alongside client work</div>
+      <div><span>Timeline</span>Ongoing since Jan 2025</div>
+    </div>
+
+    <div class="case-placeholder">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      <span>Image placeholder: RadCode monorepo overview</span>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <h2>Overview</h2>
+    <p>Alongside the core product work at Moody&rsquo;s, I contribute to <strong>RadCode</strong>, a pnpm monorepo of browser prototypes (Vite, React, TypeScript) built for rapid UI prototyping. The goal: move from idea to a functional, testable prototype in days rather than weeks.</p>
+    <ul>
+      <li>Contributed to a shared package, <code>@radcode/proto-core</code>, and a design system built on Radius components and CSS tokens.</li>
+      <li>Design work included notable prototypes such as <strong>Risk Data Refinery</strong> (plan-805) and <strong>RiskInvestorIQ / RIQ</strong> (plan-5566).</li>
+      <li>Followed a rapid discovery-to-testable-prototype cycle, keeping design and engineering tightly looped.</li>
+    </ul>
+    <div class="case-placeholder">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      <span>Image placeholder: RadCode prototype screens</span>
+    </div>
+
+    <h2>A side investigation: AI-assisted workflow costs</h2>
+    <p>Working this closely with an engineering team building AI-assisted tooling raised a question worth digging into on its own: how do architectural choices, specifically component reusability, affect token consumption in Claude Code (agentic coding assistant) workflows, as distinct from runtime LLM API costs?</p>
+    <p>That turned into a small analytical framework for evaluating engineering tradeoffs in AI-assisted workflows: tracing where cost is actually paid, identifying the countervailing forces, finding the scaling variable, and grounding the reasoning in the concrete system rather than in general assumptions.</p>
+    <div class="case-placeholder">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      <span>Image placeholder: token consumption cost framework</span>
+    </div>
+
+    <p class="note">This is an active line of practice, not a closed project: expect more concrete findings as RadCode&rsquo;s prototypes mature.</p>
+  </div>
+
+  <div class="case-next">
+    <span class="label">next project</span>
+    <a href="chloe.html" class="display">chlo&eacute; &rarr;</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-meta" style="padding-top: 40px;">
+      <div class="footer-meta-grid">
+        <div>
+          <p><strong>email:</strong> <a href="mailto:celamacedo@gmail.com">celamacedo@gmail.com</a></p>
+          <p><strong>based in:</strong> Porto, Portugal</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">pages</p>
+          <a href="index.html">home</a>
+          <a href="index.html#about">about</a>
+          <a href="index.html#work">work</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">socials</p>
+          <a href="https://www.linkedin.com/in/marcelamcm/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 marcela macedo</span>
+    </div>
+  </footer>
+</body>
+</html>

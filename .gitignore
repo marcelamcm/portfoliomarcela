@@ -1,2 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# Source docs with NDA-sensitive content (real screenshots, revenue figures,
+# internal codenames) — never publish these, only the generalized write-ups
+# in the case study pages themselves.
+assets/projects/moodys/case studies 2025.pdf
+assets/projects/chloe/chloe_case_study.html
