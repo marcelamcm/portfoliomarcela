@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chlo&eacute; · Marcela Macedo</title>
+  <meta name="description" content="Case study: redesigning Chloé.com on a shared luxury platform. UX research, a component-led design system, and a 70/30 scope constraint.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-name display">marcela macedo</a>
+    <div class="nav-links">
+      <a href="index.html#work">work</a>
+      <a href="index.html#about">about me</a>
+    </div>
+  </nav>
+
+  <div class="case-hero">
+    <a href="index.html#work" class="case-back">&larr; back to work</a>
+    <div class="case-tags">
+      <span class="tag-pill">E-commerce Platform</span>
+      <span class="tag-pill">Luxury Fashion</span>
+    </div>
+    <h1 class="display">chlo&eacute;: richemont&rsquo;s shared-platform pilot</h1>
+    <p class="case-role">Redesigning chlo&eacute;.com as the first brand onboarded to a shared UI pattern library other Richemont houses would build on next.</p>
+
+    <div class="case-meta-grid">
+      <div><span>Role</span>Product Designer, one of three on the project</div>
+      <div><span>Client</span>Chlo&eacute;, French luxury fashion house</div>
+      <div><span>Team</span>3 Product Designers &middot; Delivery Managers &middot; Farfetch Optimisation &middot; Chlo&eacute; stakeholders</div>
+      <div><span>Timeline</span>May 2023 to June 2024</div>
+    </div>
+    <p class="case-nda">This project is subject to an NDA: some details are generalized rather than disclosed at client-specific level.</p>
+
+    <div class="case-hero-media">
+      <img src="assets/projects/chloe/chloe-app-mockup.png" alt="Chloé e-commerce app screens: product pages, bags, and boutique details">
+    </div>
+  </div>
+
+  <div class="case-body">
+    <h2>Overview</h2>
+    <p class="case-glance-sub">The short version, for anyone reading on the way into a meeting.</p>
+
+    <div class="case-tldr">
+      Chlo&eacute; needed its e-commerce experience to feel as considered as its physical boutiques, without a rebuild, on a platform shared with three other luxury houses. As one of three product designers on the engagement, I helped drive a UX-research-driven redesign of <strong>search, discovery, and account experience</strong> inside a deliberately narrow <strong>70/30 scope split</strong>, adapting our existing UI kit into a new component-led style guide aligned to Chlo&eacute;&rsquo;s brand identity.
+    </div>
+
+    <div class="case-stats">
+      <div class="case-stat"><span class="num">70/30</span><span class="label">Scope split: redesigned vs. untouched</span></div>
+      <div class="case-stat"><span class="num">3</span><span class="label">Sequential design batches</span></div>
+      <div class="case-stat"><span class="num">6</span><span class="label">Unmoderated usability tests, US/UK</span></div>
+      <div class="case-stat"><span class="num">4</span><span class="label">Business metrics targeted</span></div>
+      <div class="case-stat"><span class="num">3</span><span class="label">Other luxury brands on the shared platform</span></div>
+    </div>
+
+    <div class="case-chip-group">
+      <div class="gtitle">What we were solving for</div>
+      <div class="case-chips">
+        <span class="case-chip">Search &amp; discovery engagement</span>
+        <span class="case-chip">PDP &rarr; purchase conversion</span>
+        <span class="case-chip">Account &amp; retention friction</span>
+        <span class="case-chip">Accessibility &amp; sustainability compliance</span>
+      </div>
+    </div>
+
+    <div class="case-chip-group">
+      <div class="gtitle">Key trade-offs navigated</div>
+      <div class="case-chips">
+        <span class="case-chip b">70/30 scope constraint</span>
+        <span class="case-chip b">Shared platform limits</span>
+        <span class="case-chip b">Brand instinct vs. research</span>
+      </div>
+    </div>
+
+    <div class="case-pullquote">
+      &ldquo;If I ran this again, I&rsquo;d define north-star metrics and get instrumentation agreed at kickoff, not after batch one shipped.&rdquo;
+      <span>What I&rsquo;d do differently. The full reasoning is in the detail below.</span>
+    </div>
+
+    <div class="case-divider"><span>Read on for the full story</span></div>
+
+    <div class="case-accordion">
+      <details open>
+        <summary><span><span class="idx">01</span>The Business Challenge</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>Chlo&eacute; needed its e-commerce experience to catch up to its brand: a digital flagship that felt as considered as the maison&rsquo;s physical boutiques, built on top of a platform shared across multiple luxury houses. That constraint shaped everything. The site couldn&rsquo;t be rebuilt from scratch, and any redesign had to prove its value within a platform designed to serve several brands at once, not just one.</p>
+          <p>Going in, the redesign was framed around four things the business needed to move:</p>
+          <ul>
+            <li><strong>Search and discovery engagement.</strong> Getting customers from intent to product faster, with less friction.</li>
+            <li><strong>Conversion from product page to purchase.</strong> Reducing hesitation and drop-off between PDP and checkout.</li>
+            <li><strong>Account and retention friction.</strong> Making login, registration, and order management simple enough to support repeat purchase.</li>
+            <li><strong>Accessibility and sustainability compliance.</strong> Meeting WCAG guidelines and a new environmental content policy, both increasingly non-negotiable for a brand of Chlo&eacute;&rsquo;s standing.</li>
+          </ul>
+          <p>The strategy the team landed on was deliberately conservative: a 70/30 approach, where 70% of the existing site stayed untouched and only 30% would be redesigned. That number became the single biggest constraint on every decision that followed.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">02</span>My Role &amp; Approach</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>I worked as one of three product designers on this engagement, sharing ownership of optimisation and user-centric redesign across the site&rsquo;s core journeys. Together we translated UX research into design decisions, built and maintained Chlo&eacute;&rsquo;s component-led design system, and represented design in weekly syncs with Chlo&eacute; stakeholders, where scope, trade-offs, and direction were negotiated in real time rather than decided in isolation.</p>
+          <p>The work was structured into three sequential design batches, each ending in a stakeholder checkpoint. That cadence mattered. Nothing shipped without client sign-off, but it also meant the pace of iteration was set by alignment meetings, not just by how fast the design work itself was maturing.</p>
+          <div class="case-media">
+            <img src="assets/projects/chloe/team-batch-structure.png" alt="The three-designer team and the three sequential design batches">
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">03</span>Research &amp; Insights</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>Before redesigning anything, I helped run two parallel research tracks: a UX review benchmarking Chlo&eacute;&rsquo;s existing pages against industry best practice (including established heuristics like Baymard&rsquo;s guidelines), and unmoderated usability testing with six sessions across US and UK users, on both desktop and mobile.</p>
+          <p>The clearest, most costly finding: search queries were cleared the moment a user landed on the results page, forcing them to retype and re-search from scratch. It&rsquo;s a small interaction detail with an outsized cost. Every instance of it was a customer re-doing work the system should have remembered, right at the moment they were closest to finding what they came for.</p>
+          <p>That finding, alongside others around navigation clarity, footer structure, and product-page scannability, became the backlog the three design batches were built to work through.</p>
+          <div class="case-media">
+            <img src="assets/projects/chloe/usability-testing-findings.png" alt="Usability testing findings summary">
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">04</span>Key Decisions &amp; Trade-offs</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>A few tensions shaped this work more than any single design choice did.</p>
+          <div class="acc-block">
+            <h4>The 70/30 scope constraint</h4>
+            <p>Only three-tenths of the site could change. That meant constantly triaging which UX issues were worth spending redesign budget on, and which ones we knowingly left unresolved because they lived in the 70% we couldn&rsquo;t touch. Prioritization wasn&rsquo;t a one-time exercise. It was a running negotiation across all three batches.</p>
+          </div>
+          <div class="acc-block">
+            <h4>Building on a shared platform</h4>
+            <p>Chlo&eacute;&rsquo;s site sat on the same underlying platform as Cartier, Chanel, and Richemont. Every customization had to work within that shared foundation, which meant Chlo&eacute;-specific ambition sometimes had to be scaled back to what the platform could reasonably support without diverging too far from the other brands it served.</p>
+          </div>
+          <div class="acc-block">
+            <h4>Brand instinct versus research</h4>
+            <p>Chlo&eacute;&rsquo;s stakeholders had strong, well-earned convictions about brand identity, and the styleguide shift from beige ros&eacute; to black is the clearest example. Part of my role was holding the line on what user testing and the UX review actually showed, while still respecting that brand equity is a legitimate design input, not just an obstacle to user-centered design. That balance was negotiated, not won outright, in most of our weekly syncs.</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">05</span>The Solution</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>The redesign clustered into three journeys: Discovery (styleguide, navigation, header, footer, homepage, search, PLP, PDP), Purchase (login, account, bag, checkout, orders, returns), and Content (editorial, newsletter, legal, store locator), each reviewed against both the research findings and Chlo&eacute;&rsquo;s business requirements.</p>
+          <p>Two pieces of work anchored the rest.</p>
+          <p>Rather than starting from a blank canvas, our team took our existing UI kit as a foundation and enhanced it to align with Chlo&eacute;&rsquo;s style guide and brand identity: buttons, inputs, dropdowns, modals, accordions, banners. This meant every subsequent redesign decision inherited consistency and accessibility by default, instead of needing to be re-litigated page by page. I focused on designing several of the more intricate components while meticulously assessing accessibility guidelines, so the system stayed inclusive as it scaled.</p>
+          <div class="case-media">
+            <img src="assets/projects/chloe/component-design-system.png" alt="Component-led design system: buttons, inputs, dropdowns, modals, accordions, banners">
+          </div>
+          <p>The search and navigation experience became the clearest demonstration of the research-to-design pipeline, and my favorite part of this project to defend in front of stakeholders because every change traced directly back to a specific finding. Our team restructured the main navigation, made the search field more visible, persisted the user&rsquo;s query across the results page, surfaced popular searches and live product-card suggestions as people typed, and displayed result counts to keep users oriented.</p>
+          <div class="case-media">
+            <img src="assets/projects/chloe/search-navigation-redesign.png" alt="Search and navigation redesign: persisted query, popular searches, and result counts">
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">06</span>Outcomes</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>There isn&rsquo;t post-launch performance data I can share here. The engagement wrapped before that measurement loop closed, and what data does exist is NDA-protected. So rather than overstate impact, here&rsquo;s what I can stand behind.</p>
+          <div class="acc-block">
+            <h4>What shipped and was adopted</h4>
+            <p>The redesigned styleguide, the enhanced component-led UI kit, and the optimised page set went live across all three design batches, each one reviewed and signed off by Chlo&eacute; at a client checkpoint. The UI kit in particular was validated as a proof of concept for how future features would be built, not just a one-off deliverable.</p>
+          </div>
+          <div class="case-media">
+            <img src="assets/projects/chloe/final-ui-kit.png" alt="The final shipped, component-led UI kit">
+          </div>
+          <div class="acc-block">
+            <h4>What the work was designed to move</h4>
+            <p>Each redesigned journey mapped to one of the four target areas above. Search and navigation changes were meant to be measured against search-to-PDP click-through and repeat-search rate. PDP and checkout refinements against cart-to-purchase conversion. Account flow simplification against completed-registration and repeat-login rates. The styleguide and component work against WCAG conformance scores.</p>
+          </div>
+          <div class="acc-block">
+            <h4>Why I&rsquo;d expect it to have worked</h4>
+            <p>These weren&rsquo;t speculative changes. They were built directly on documented UX research, and for search behavior specifically, on established e-commerce benchmarks. Search-query persistence is a well-evidenced fix for exactly the drop-off pattern our testing surfaced. That doesn&rsquo;t replace real post-launch numbers, but it&rsquo;s the difference between a redesign built on opinion and one built on evidence.</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">07</span>What I&rsquo;d Do Differently</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>If I ran this project again, the biggest change wouldn&rsquo;t be a design decision. It would be an earlier one. I&rsquo;d push, at kickoff, to define the north-star metrics for each journey and get instrumentation agreed before batch one shipped, not after. We had strong qualitative signal on what was broken, but no shared measurement plan for proving the fix worked, which meant that months later, in a room being asked what the impact was, my honest answer was a design rationale instead of a number. That&rsquo;s a gap I&rsquo;d close at the start of the next project, not the end.</p>
+          <p>I&rsquo;d also try to negotiate the 70/30 split itself earlier and more explicitly, asking not just what we could redesign, but what the cost, in user friction, of the 70% we weren&rsquo;t touching actually was, so scope conversations were grounded in the same research evidence as the design decisions.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span><span class="idx">08</span>Key Takeaways</span><span class="plus"></span></summary>
+        <div class="acc-body">
+          <p>This project reinforced something I now treat as non-negotiable: user research only creates value if it&rsquo;s paired with a way to prove the fix worked. Accessibility and sustainability guidelines are easiest to build in when they&rsquo;re part of the design system from day one, not retrofitted later. And on a shared platform serving multiple brands, the real design skill isn&rsquo;t just solving the UX problem. It&rsquo;s knowing which battles, brand identity, platform constraints, scope, are worth spending stakeholder trust on, and which aren&rsquo;t.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="case-next">
+    <span class="label">next project</span>
+    <a href="moodys.html" class="display">moody&rsquo;s &rarr;</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-meta" style="padding-top: 40px;">
+      <div class="footer-meta-grid">
+        <div>
+          <p><strong>email:</strong> <a href="mailto:celamacedo@gmail.com">celamacedo@gmail.com</a></p>
+          <p><strong>based in:</strong> Porto, Portugal</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">pages</p>
+          <a href="index.html">home</a>
+          <a href="index.html#about">about</a>
+          <a href="index.html#work">work</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">socials</p>
+          <a href="https://www.linkedin.com/in/marcelamcm/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 marcela macedo</span>
+    </div>
+  </footer>
+</body>
+</html>

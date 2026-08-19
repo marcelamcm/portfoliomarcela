@@ -4,56 +4,170 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marcela Macedo — Product Designer</title>
-  <meta name="description" content="Marcela Macedo, senior product designer — Moody's, Chanel, Chloé, Mercedes-Benz, Richemont.">
+  <meta name="description" content="Marcela Macedo, product designer — Moody's, Chanel, Chloé, Richemont.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="nav">
-    <span class="pill">Marcela Macedo</span>
-    <span class="right">
-      <span class="pill">Work</span>
-      <span class="pill">Contact</span>
-      <span class="avatar">MM</span>
-    </span>
+    <a href="index.html" class="nav-name display">marcela macedo</a>
+    <div class="nav-links">
+      <a href="#work">work</a>
+      <a href="#about">about me</a>
+    </div>
   </nav>
 
-  <div class="marquee-wrap" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Moody&rsquo;s <span>&#10022;</span></span>
-      <span>Chanel <span>&#10022;</span></span>
-      <span>Chlo&eacute; <span>&#10022;</span></span>
-      <span>Mercedes-Benz <span>&#10022;</span></span>
-      <span>Richemont <span>&#10022;</span></span>
-      <span>Foursource <span>&#10022;</span></span>
-      <span>Moody&rsquo;s <span>&#10022;</span></span>
-      <span>Chanel <span>&#10022;</span></span>
-      <span>Chlo&eacute; <span>&#10022;</span></span>
-      <span>Mercedes-Benz <span>&#10022;</span></span>
-      <span>Richemont <span>&#10022;</span></span>
-      <span>Foursource <span>&#10022;</span></span>
-    </div>
-  </div>
-
   <section class="hero">
-    <div>
-      <h1>Design is how complicated systems earn a little trust back.</h1>
-      <p class="bioline"><span class="q">&ldquo;</span>Ten years across product, industrial, and graphic design &mdash; most recently rebuilding trust into <strong>Moody&rsquo;s</strong> data platforms, after doing the same for <strong>Chanel</strong> and <strong>Mercedes-Benz</strong>.&rdquo;</p>
-      <button class="cta" type="button">See the work <span class="arrow">&darr;</span></button>
-    </div>
-
-    <div class="collage">
-      <div class="win win2">10+ yrs product design</div>
-      <div class="win win1"><span class="dot"></span>40+ countries &middot; Moody&rsquo;s</div>
-      <div class="win win3">6 major brands</div>
-
-      <!-- Placeholder slots — drop project PNGs into assets/ and swap the <span class="tag"> for <img src="assets/your-file.png" alt="..."> -->
-      <div class="ph ph1"><span class="tag mono">moodys-01.png</span></div>
-      <div class="ph ph2"><span class="tag mono">chanel-02.png</span></div>
-      <div class="ph ph3"><span class="tag mono">mb-chatbot.png</span></div>
-      <div class="ph ph4"><span class="tag mono">chloe-03.png</span></div>
+    <div class="hero-inner">
+      <h1 class="display">marcela macedo</h1>
+      <p class="tagline">I&rsquo;m a product designer with 10+ years of experience shaping clear, thoughtful digital experiences and design systems for global brands and complex products.</p>
     </div>
   </section>
 
-  <!-- Screen 2 (case study previews) not built yet — next session. -->
+  <section class="companies">
+    <p class="label">companies i have worked with</p>
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Moody&rsquo;s</span><span>Chanel</span><span>Chlo&eacute;</span>
+        <span>Mercedes-Benz</span><span>Richemont</span><span>Off-White</span><span>Foursource</span>
+        <span>Moody&rsquo;s</span><span>Chanel</span><span>Chlo&eacute;</span>
+        <span>Mercedes-Benz</span><span>Richemont</span><span>Off-White</span><span>Foursource</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work-head">
+      <h2 class="display">selected work</h2>
+      <p class="work-sub">A mix of enterprise SaaS and luxury retail, spanning risk intelligence to e-commerce.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter work by category">
+      <button class="filter-btn active" data-filter="all">all</button>
+      <button class="filter-btn" data-filter="enterprise">enterprise saas</button>
+      <button class="filter-btn" data-filter="luxury">luxury fashion</button>
+      <button class="filter-btn" data-filter="ecommerce">e-commerce</button>
+    </div>
+
+    <div class="work-grid">
+      <a class="proj" href="moodys.html" data-category="enterprise">
+        <div class="proj-media"><img src="assets/projects/moodys/moodys-card.png" alt="Moody's brand collage — wordmark, typography, and team photography" loading="lazy"></div>
+        <div class="proj-tags">
+          <span class="tag-pill">Enterprise SaaS</span>
+          <span class="tag-pill">Risk Intelligence</span>
+          <span class="tag-pill mono">AI</span>
+        </div>
+        <h3 class="proj-title">Moody&rsquo;s <span class="proj-sub">&mdash; Risk Modeler</span></h3>
+        <p class="proj-desc">Untangling complex data journeys into clearer flows for risk analysts across 40+ countries, plus the design system and rapid-prototyping practice behind it.</p>
+        <span class="proj-link">View case study <span class="arrow-circle">&rarr;</span></span>
+      </a>
+
+      <a class="proj" href="chloe.html" data-category="luxury">
+        <div class="proj-media"><img src="assets/projects/chloe/chloe-app-mockup.png" alt="Chloé e-commerce app screens — product pages, bags, and boutique details" loading="lazy"></div>
+        <div class="proj-tags">
+          <span class="tag-pill">E-commerce Platform</span>
+          <span class="tag-pill">Luxury Fashion</span>
+          <span class="tag-pill mono">Figma</span>
+        </div>
+        <h3 class="proj-title">Chlo&eacute;</h3>
+        <p class="proj-desc">Streamlined onboarding and platform UX for Chlo&eacute; within Farfetch&rsquo;s toolkit, shaping the style guide underneath it.</p>
+        <span class="proj-link">View case study <span class="arrow-circle">&rarr;</span></span>
+      </a>
+
+      <div class="proj" data-category="luxury">
+        <div class="proj-media"><img src="assets/projects/chanel/chanel-card.png" alt="Chanel Métiers d'Art mobile flow and product mockups" loading="lazy"></div>
+        <div class="proj-tags">
+          <span class="tag-pill">Retail &amp; E-commerce</span>
+          <span class="tag-pill">Luxury Fashion</span>
+          <span class="tag-pill mono">Figma</span>
+        </div>
+        <h3 class="proj-title">Chanel</h3>
+        <p class="proj-desc">Design system and style-guide work for one of luxury&rsquo;s most exacting brands, balancing heritage with modern usability.</p>
+        <span class="proj-link"><span class="tag-pill status">Case study coming soon</span></span>
+      </div>
+
+      <div class="proj" data-category="ecommerce">
+        <div class="proj-media"><img src="assets/projects/richemont/richemont-card.png" alt="Richemont Group watches and jewellery e-commerce grid" loading="lazy"></div>
+        <div class="proj-tags">
+          <span class="tag-pill">E-commerce Platform</span>
+          <span class="tag-pill">Watches &amp; Jewellery</span>
+          <span class="tag-pill mono">Figma</span>
+        </div>
+        <h3 class="proj-title">Richemont</h3>
+        <p class="proj-desc">Design system and onboarding UX for the Richemont Group&rsquo;s e-commerce platforms, from product grids to checkout.</p>
+        <span class="proj-link"><span class="tag-pill status">Case study coming soon</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-top">
+        <p class="about-lead display">I&rsquo;m Marcela Macedo, a product designer with 10+ years of experience across digital products, design systems, and brand-led experiences. I partner with cross-functional teams to turn complex journeys into clear, intuitive tools for people around the world.<br><br>Trained in Brazil, based in Porto &mdash; still happiest inside a system with too many moving parts.</p>
+
+        <div class="photo-strip" aria-hidden="true">
+          <img src="assets/about/photobooth.png" alt="Marcela Macedo, three-frame black and white photobooth strip">
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-col">
+          <p class="eyebrow">why work with me</p>
+          <p>My curiosity for design has led me to work across different disciplines, sharpening both my craft and my ability to see the bigger picture. I balance analytical, strategic thinking with a refined visual sensibility, and bring an adaptable, collaborative mindset to every team; listening closely, supporting my peers, and building strong working relationships along the way.</p>
+          <a href="mailto:celamacedo@gmail.com" class="btn">get in touch</a>
+        </div>
+
+        <div class="about-col">
+          <p class="eyebrow">beyond the screen</p>
+          <p>When I&rsquo;m not designing, I&rsquo;m usually out with my dog Bowie, trying a new coffee spot somewhere in Porto, or planning a trip around seeing my favourite artists live; most recently in Milan and London.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-meta">
+      <div class="footer-meta-grid">
+        <div>
+          <p><strong>email:</strong> <a href="mailto:celamacedo@gmail.com">celamacedo@gmail.com</a></p>
+          <p><strong>based in:</strong> Porto, Portugal</p>
+          <p><strong>available for:</strong> freelance projects &amp; full-time</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">pages</p>
+          <a href="index.html">home</a>
+          <a href="#about">about</a>
+          <a href="#work">work</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">socials</p>
+          <a href="https://www.linkedin.com/in/marcelamcm/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-word">
+      <h2 class="display">marcela macedo</h2>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 marcela macedo</span>
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.proj');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const show = filter === 'all' || card.dataset.category === filter;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
