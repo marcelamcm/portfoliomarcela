@@ -463,6 +463,12 @@ img { max-width: 100%; display: block; }
 }
 .case-media img { width: 100%; height: auto; display: block; }
 
+.case-media-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 40px 0;
+}
+.case-media-row .case-media { margin: 0; }
+@media (max-width: 640px) { .case-media-row { grid-template-columns: 1fr; } }
+
 .case-placeholder {
   aspect-ratio: 16 / 9; border-radius: 16px; border: 1px dashed var(--border);
   background: var(--bg-alt-2); margin: 32px 0;
