@@ -36,6 +36,18 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
 - ⏳ Chanel and Richemont case study pages — not built yet.
 - ⏳ Off-White and Foursource have no imagery yet — add project cards for
   them once assets exist.
+- ✅ **Moody's case study images** (2026-08-20) — the three `.case-placeholder`
+  blocks in `moodys.html` are now real screenshots: a token table + tri-theme
+  comparison for the Design System section (`token-table.jpg`, `Themes.png`),
+  the Databases management screen for Data Administration
+  (`data-admin-databases.jpg`), and the Manage Jobs / structured error log
+  flow for Analysis Log (`analysislogmock.png`). Some of these are real
+  product screenshots (not just Figma mockups) pulled from
+  `assets/projects/moodys/case studies 2025.pdf` — that source PDF stays
+  gitignored (NDA note below), but Marcela has cleared these specific derived
+  crops for public use. Also fixed the page's stale `<title>`/meta
+  description, which still said "Risk Modeler" after the homepage card copy
+  was broadened.
 
 ### Note on project imagery (2026-08-19)
 
@@ -92,8 +104,11 @@ locally — push, then refresh the live URL above.
 
 ## Next session
 
+- Push the pending Moody's image commit to `main` when ready (currently
+  committed locally only, not yet on the live site)
 - Resume PDF + re-add the "download resume" button
 - Chanel and Richemont case study pages
-- A second image per brand, to restore the `.case-media` section in each
-  case study page
+- A second image per brand for Chloé/Chanel/Richemont, to restore the
+  `.case-media` section in each case study page (Moody's now has its own
+  real screenshots, done 2026-08-20)
 - Add Off-White and Foursource cards once assets are in Figma
