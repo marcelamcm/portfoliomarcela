@@ -1,5 +1,5 @@
-/* Marcela Macedo — Portfolio
-   Direction: dark, editorial — matches the Framer draft (see README).
+/* Marcela Macedo, Portfolio
+   Direction: dark, editorial, matches the Framer draft (see README).
    Near-black background, cream type, heavy display grotesk, indigo accent
    pulled from the Moody's palette. Plain CSS, no build step. */
 
@@ -146,7 +146,7 @@ img { max-width: 100%; display: block; }
 .proj-media.placeholder span { font-size: 12px; font-weight: 600; max-width: 26ch; }
 
 /* Tag colour rule: .tag-pill is metadata (industry / tool / status) and stays
-   neutral everywhere it appears — homepage cards and case-study hero alike —
+   neutral everywhere it appears, homepage cards and case-study hero alike,
    so the same label always reads the same way. Colour (lilac / indigo) is
    reserved for .case-chip, which summarizes narrative content inside a case
    study body, not metadata. Don't tint .tag-pill; add a new chip variant
@@ -318,7 +318,7 @@ img { max-width: 100%; display: block; }
 
 /* .case-chip is the colour-coded half of the tag rule (see .tag-pill comment
    above). Both variants get the same treatment (tinted fill + border + text)
-   so the two groups carry equal visual weight — colour tells them apart,
+   so the two groups carry equal visual weight, colour tells them apart,
    not intensity: periwinkle = problems/goals ("what we were solving for"),
    lilac = tensions/decisions (.b, "key trade-offs"). */
 .case-chip-group { margin: 0 0 28px; }
@@ -510,7 +510,7 @@ img { max-width: 100%; display: block; }
 .case-media-caption a { color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px; }
 .case-media-caption a:hover { color: var(--fg); }
 
-/* Highlighted aside within a case-init-body — for a specific problem or
+/* Highlighted aside within a case-init-body, for a specific problem or
    complication worth calling out on its own, distinct from the surrounding
    narrative. Reuses the periwinkle = "problems/goals" color convention
    from .case-chip above. */
