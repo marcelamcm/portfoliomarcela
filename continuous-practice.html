@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Continuous Discovery and Testing AI Practice · Marcela Macedo</title>
+  <meta name="description" content="An ongoing design team practice built alongside the Moody's engagement: AI-assisted prototyping, continuous testing, and closing the gaps between design intent and working code.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-name display">marcela macedo</a>
+    <div class="nav-links">
+      <a href="index.html#work">work</a>
+      <a href="index.html#about">about me</a>
+    </div>
+  </nav>
+
+  <div class="case-hero">
+    <a href="index.html#work" class="case-back">&larr; back to work</a>
+    <div class="case-tags">
+      <span class="tag-pill">AI Tooling</span>
+      <span class="tag-pill">Continuous Discovery</span>
+      <span class="tag-pill mono">Team Practice</span>
+    </div>
+    <h1 class="display">a continuous discovery and testing ai practice</h1>
+    <p class="case-role">An ongoing design team practice, built alongside the <a href="moodys.html">Moody&rsquo;s / Nagarro Digital Ventures engagement</a>, not a single designer&rsquo;s project.</p>
+
+    <div class="case-meta-grid">
+      <div><span>Role</span>Design team contributor</div>
+      <div><span>Context</span>Team practice, alongside client engagement</div>
+      <div><span>Timeline</span>Ongoing since Jan 2025</div>
+    </div>
+
+    <div class="case-hero-media">
+      <img src="assets/projects/continuous-practice/docs-hub-laptop.png" alt="A genericized recreation of the rewritten documentation hub, shown open on a laptop: a getting-started page with a work-in-progress notice, and cards for building prototypes, viewing and testing, the component library, and utilities.">
+    </div>
+  </div>
+
+  <div class="case-body">
+    <h2>The loop</h2>
+    <p>This isn&rsquo;t a one-time process, it runs continuously. Every prototype goes through it, and what we learn from one round changes how the next one starts.</p>
+
+    <div class="case-chip-group">
+      <div class="gtitle">The five-step loop</div>
+      <div class="case-chips">
+        <span class="case-chip">1. Design intent</span>
+        <span class="case-chip">2. AI-assisted build</span>
+        <span class="case-chip">3. Working prototype</span>
+        <span class="case-chip">4. Test &amp; audit</span>
+        <span class="case-chip">5. Close the gaps</span>
+      </div>
+    </div>
+    <p>Step 5 feeds back into step 1: the loop repeats, and each pass makes the next one more accurate.</p>
+
+    <h2>Why</h2>
+    <p class="body-main">Leadership asked a direct question: how do we shorten the time it takes to explore and design an idea, bring clients something more feasible sooner, and reduce how long it takes engineering to implement once a direction is agreed? Our answer was to stop handing off static comps and start testing ideas in real, working code early: fast enough to explore several directions before committing to one, credible enough to present to clients as something real, and precise enough that engineering could pick it up in a shared language instead of reinterpreting a picture. That answer is what became this practice.</p>
+
+    <h2>Continuous discovery in practice</h2>
+    <p>Two concrete examples of the loop actually running: one on a product, one on the practice itself.</p>
+
+    <div class="case-init-list">
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">Product example</span>
+              <span class="case-init-title">Closing the Gap on a Live Prototype</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p class="lead-in">What we had</p>
+          <p>A working prototype of an AI chat interface already existed, built from an early product spec.</p>
+
+          <p class="lead-in">What testing it found</p>
+          <p>We ran a structured audit against it and mapped every gap to the requirement it broke, then ranked each one by severity: no way to cancel a long-running response, trust elements (sources, the underlying logic) only half-built, entry points too easy to miss, and language that assumed the wrong audience.</p>
+
+          <p class="lead-in">What we built next</p>
+          <p>A finalized pass that closes those specific gaps, composed from the patterns already in our design system rather than inventing new ones, so the fix reinforces the same system it came from instead of drifting from it.</p>
+
+          <div class="case-media">
+            <img src="assets/projects/continuous-practice/chat-interface-laptop.png" alt="A genericized recreation of the audited chat interface, shown open on a laptop: a user question, an answer with a data table, a source count, an underlying-query disclosure link, and a visible stop control on a still-thinking response.">
+          </div>
+        </div>
+      </details>
+
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">System example</span>
+              <span class="case-init-title">Feeding the System Itself</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p class="lead-in">What we had</p>
+          <p>We kept feeding our AI tools more design system documentation and pattern guidance, trying to get more consistent output that actually matched our real components, tokens, and behaviors.</p>
+
+          <p class="lead-in">What testing it found</p>
+          <p>An AI agent used a property on a component that didn&rsquo;t actually exist. Nothing caught it, so it rendered wrong, got committed, and the next prototype copied that file as a starting point, carrying the mistake forward. The same thing happened with color: no token existed for what was needed, so the agent hardcoded a raw value that looked right but failed accessibility contrast. Writing real documentation meant properly using every component for the first time, and that surfaced roughly 70 real defects that had never been visible before, including behavior that silently failed in exactly the theme our product actually uses.</p>
+
+          <p class="lead-in">What we built next</p>
+          <p>Three connected layers: a generated, always-current catalog of what&rsquo;s actually available for an AI agent to check against, rewritten documentation built for people, with live components instead of screenshots, and a lint rule that fails the build outright on an invalid prop, so accuracy doesn&rsquo;t depend on anyone remembering to check.</p>
+
+          <div class="case-media">
+            <svg viewBox="0 0 720 160" style="width:100%; height:auto; display:block; border-radius:10px; box-shadow:0 24px 56px -24px rgba(0,0,0,0.6);" role="img" aria-label="Stats: roughly 70 real defects surfaced, 63 components properly exercised, 3 connected layers built.">
+              <rect x="0" y="0" width="720" height="160" rx="10" fill="var(--bg-alt-2)"/>
+              <line x1="240" y1="20" x2="240" y2="130" stroke="var(--border)" stroke-width="1"/>
+              <line x1="480" y1="20" x2="480" y2="130" stroke="var(--border)" stroke-width="1"/>
+
+              <circle cx="120" cy="42" r="18" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="1.5"/>
+              <line x1="120" y1="34" x2="120" y2="44" stroke="var(--periwinkle)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="120" cy="49" r="1.6" fill="var(--periwinkle)"/>
+              <text x="120" y="100" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="34" fill="var(--fg)">~70</text>
+              <text x="120" y="124" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="var(--fg-dim)">Defects found</text>
+
+              <circle cx="360" cy="42" r="18" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="1.5"/>
+              <g transform="translate(240,0)">
+                <rect x="112" y="34" width="6" height="6" rx="1.5" fill="none" stroke="var(--periwinkle)" stroke-width="1.3"/>
+                <rect x="122" y="34" width="6" height="6" rx="1.5" fill="none" stroke="var(--periwinkle)" stroke-width="1.3"/>
+                <rect x="112" y="44" width="6" height="6" rx="1.5" fill="none" stroke="var(--periwinkle)" stroke-width="1.3"/>
+                <rect x="122" y="44" width="6" height="6" rx="1.5" fill="none" stroke="var(--periwinkle)" stroke-width="1.3"/>
+              </g>
+              <text x="360" y="100" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="34" fill="var(--fg)">63</text>
+              <text x="360" y="124" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="var(--fg-dim)">Components exercised</text>
+
+              <circle cx="600" cy="42" r="18" fill="var(--bg-alt)" stroke="var(--border)" stroke-width="1.5"/>
+              <rect x="592" y="34" width="16" height="3" rx="1.5" fill="var(--periwinkle)"/>
+              <rect x="592" y="40" width="16" height="3" rx="1.5" fill="var(--periwinkle)" opacity="0.75"/>
+              <rect x="592" y="46" width="16" height="3" rx="1.5" fill="var(--periwinkle)" opacity="0.5"/>
+              <text x="600" y="100" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="34" fill="var(--fg)">3</text>
+              <text x="600" y="124" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="var(--fg-dim)">Layers built</text>
+            </svg>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <h2>What the practice has produced</h2>
+    <p>Five production-fidelity prototypes so far, each one run through the loop above.</p>
+    <ul>
+      <li><strong>Matching &amp; review workflows.</strong> Run a match, review by confidence, override, resolve, apply, built by reusing a proven pattern rather than starting over for each domain.</li>
+      <li><strong>Conversational AI interfaces.</strong> Chat-based tools with hard requirements: always show sources, always show the underlying logic, results as tables, charts, and maps, not just text.</li>
+      <li><strong>Geospatial exploration.</strong> Interactive mapping with live layers, its core pieces generalized into the shared system so later prototypes didn&rsquo;t start from zero.</li>
+      <li><strong>The practice&rsquo;s own infrastructure.</strong> The catalog, documentation, and lint layer above, built because the practice itself needed to be tested and fixed like any other product.</li>
+    </ul>
+
+    <h2>Where we&rsquo;re still working</h2>
+    <p>This is active, ongoing work. We don&rsquo;t have a finished result to report, we have open problems we&rsquo;re honest about.</p>
+    <div class="case-callout">
+      <p>The clearest one right now: stripping the improper component usage that&rsquo;s already baked into earlier prototypes. Until that&rsquo;s done, an AI agent building something new can still find one of those old files, copy it as a starting point, and reintroduce a mistake we already fixed once. It&rsquo;s a reminder that this kind of discovery doesn&rsquo;t really finish, closing one gap changes what the next round needs to find.</p>
+    </div>
+
+    <p class="note">This reflects a team practice, presented in the collective, not one designer&rsquo;s output. Redacted for repo names, code paths, and plan numbers, and still an active line of practice rather than a closed project.</p>
+  </div>
+
+  <div class="case-next">
+    <span class="label">next project</span>
+    <a href="chloe.html" class="display">chlo&eacute; &rarr;</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-meta" style="padding-top: 40px;">
+      <div class="footer-meta-grid">
+        <div>
+          <p><strong>email:</strong> <a href="mailto:celamacedo@gmail.com">celamacedo@gmail.com</a></p>
+          <p><strong>based in:</strong> Porto, Portugal</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">pages</p>
+          <a href="index.html">home</a>
+          <a href="index.html#about">about</a>
+          <a href="index.html#work">work</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-label">socials</p>
+          <a href="https://www.linkedin.com/in/marcelamcm/" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 marcela macedo</span>
+    </div>
+  </footer>
+</body>
+</html>

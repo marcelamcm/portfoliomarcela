@@ -15,15 +15,28 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
   filter pills (all / enterprise saas / luxury fashion) →
   **about** section (bio, real photobooth strip, why-work-with-me,
   beyond-the-screen) → footer (contact, pages, socials, big wordmark).
-  Work grid order: Moody's, RadCode, Chloé, Chanel.
+  Work grid order: Moody's, Continuous Practice, Chloé, Chanel.
 - ✅ **Case study pages** for **Moody's** ([moodys.html](moodys.html)),
-  **RadCode** ([radcode.html](radcode.html)), and **Chloé**
-  ([chloe.html](chloe.html)), sourced from `cv-master.md`. RadCode split out
-  of the Moody's page (2026-08-19): Moody's stays a client case study,
-  RadCode is the separate rapid-prototyping / AI-tooling practice piece that
-  grew out of that engagement, framed as personal R&D rather than a client
-  deliverable. The two link to each other. Chanel card on the home page is
-  marked "Case study coming soon" until its page is written.
+  **Continuous Practice** ([continuous-practice.html](continuous-practice.html)),
+  and **Chloé** ([chloe.html](chloe.html)), sourced from `cv-master.md`. The
+  practice piece split out of the Moody's page (2026-08-19): Moody's stays a
+  client case study, Continuous Practice is the separate AI-assisted
+  prototyping/testing practice that grew out of that engagement, framed as a
+  team practice rather than a client deliverable. The two link to each
+  other. Chanel card on the home page is marked "Case study coming soon"
+  until its page is written.
+- ✅ **RadCode renamed to Continuous Practice** (2026-08-20): the internal
+  tool name "RadCode" is Moody's real, ongoing internal codebase, not
+  something to name on a public portfolio, so `radcode.html` was replaced
+  with `continuous-practice.html` ("A Continuous Discovery and Testing AI
+  Practice"), rewritten from a fuller internal case-study doc. Every
+  "RadCode" mention was scrubbed site-wide, including two inline references
+  inside `moodys.html`. Hero and one in-body image are genericized,
+  fictional mockups (a "Insight Assistant" chat interface and a "Proto Kit"
+  docs hub, neither a real product name) built from scratch in HTML/CSS,
+  rendered to PNG via headless Chrome, and composited into a CSS-built
+  laptop frame (`assets/projects/continuous-practice/*-laptop.png`). No real
+  Moody's screens, branding, or copy are reproduced anywhere on the page.
 - ⏳ **Richemont archived** (2026-08-20): its "coming soon" card and the
   now-empty `e-commerce` filter pill are removed from the home page for now.
   The card markup, its assets (`assets/projects/richemont/`), and the
@@ -85,7 +98,7 @@ Marcela's been adding them.
 ```
 index.html                 home page
 moodys.html                 Moody's case study
-radcode.html                 RadCode / AI-tooling practice piece
+continuous-practice.html      Continuous Practice / AI-tooling practice piece
 chloe.html                   Chloé case study
 styles.css                     all styles (dark theme, Archivo + Inter)
 assets/projects/<brand>/          one folder per brand, project imagery
