@@ -85,8 +85,8 @@
           <span class="plus"></span>
         </summary>
         <div class="case-init-body">
-          <p>The RDL AI Agent is a conversational assistant inside Risk Data Lake that lets non-SQL users, including risk analysts, underwriters, and portfolio managers, ask questions about risk data directly, instead of waiting on an analyst or writing SQL for every request.</p>
-          <p><strong>Problem:</strong> analysts were a bottleneck for anyone who needed an answer from Risk Data Lake but couldn&rsquo;t query it themselves, slowing down everyday questions that didn&rsquo;t need a full ad hoc analysis.</p>
+          <p>The RDL AI Agent, internally nicknamed Caspian, is a conversational assistant inside Risk Data Lake that lets non-SQL users, including underwriters, portfolio managers, and analysts, ask questions about risk data in plain English and get back an answer with the data, the chart, and proof of where it came from.</p>
+          <p><strong>Problem:</strong> anyone who couldn&rsquo;t write SQL depended on an analyst for even a quick number, so everyday questions waited in a queue behind full ad hoc analysis work.</p>
 
           <div class="case-callout">
             <p class="case-callout-label">The challenge</p>
@@ -94,19 +94,23 @@
             <p>That forced a question I hadn&rsquo;t had to answer this directly before: <strong>what is my role when a non-designer can already produce a &ldquo;good enough&rdquo; clickable prototype with AI?</strong></p>
           </div>
 
-          <p>My answer was to shift from making the pixels to auditing them: using the prototype as a starting point, not a finished design, and checking it against everything it hadn&rsquo;t been checked against yet.</p>
-          <p class="lead-in">My audit covered three layers</p>
+          <p>My answer was to shift from making the pixels to auditing them: using the prototype as a starting point, not a finished design, and checking it against its own requirements and against usability best practices.</p>
+          <p class="lead-in">What the audit found</p>
           <ul>
-            <li><strong>Requirements fit:</strong> checked the prototype against its own stated scope, flagging gaps between what was asked for and what was actually built.</li>
-            <li><strong>Usability &amp; best practices:</strong> evaluated the flow against interaction design standards and general best practices, not just whether it worked, but whether it held up.</li>
-            <li><strong>Design system fit:</strong> mapped the AI-generated UI back onto our actual component library and tokens, rather than letting an improvised visual language ship as-is.</li>
+            <li>No one-click hand-off from a generated SQL query into the actual SQL editor, only a copy button, so &ldquo;show your work&rdquo; was only half-built.</li>
+            <li>Source citations and result counts stayed visible, sometimes duplicated, even on failed responses, undermining the one rule that mattered most: don&rsquo;t show what you can&rsquo;t back up.</li>
+            <li>No way to cancel a request while the agent was &ldquo;thinking,&rdquo; leaving people stuck waiting out a frozen-feeling state.</li>
+            <li>Entry points and example prompts were written in raw SQL/schema language, defaulting the whole experience toward the one persona who didn&rsquo;t actually need it.</li>
+            <li>The agent&rsquo;s own entry point was an unlabeled icon, undiscoverable despite being the platform&rsquo;s headline new capability.</li>
           </ul>
+
+          <p class="lead-in">Extending the system, not working around it</p>
+          <p>Roughly a quarter of what the chat interface needed, things like message bubbles and sender/receiver treatment, didn&rsquo;t exist in the core design system yet. Rather than hardcoding one-off components for this feature, I used atomic design principles: building new patterns as atoms of the existing library, so the system grows instead of collecting exceptions to it.</p>
 
           <p class="lead-in">Outcomes</p>
           <ul>
-            <li>Redesigned the chatbot within RadCode, rebuilding the flow with our actual Radius-based components and tokens rather than the PM&rsquo;s improvised prototype.</li>
-            <li>The redesigned RDL AI Agent shipped, replacing the AI-generated prototype as the product&rsquo;s real interface.</li>
-            <li>The audit itself became a repeatable process: a template the team now applies whenever an AI-generated prototype comes in from outside design, rather than a one-off fix.</li>
+            <li>Turned the audit findings into finalized, RadCode-built screens that close each gap: a one-click SQL editor hand-off, a cancel control, corrected citation behavior on failed responses, and persona-appropriate entry points and prompts.</li>
+            <li>The finalized experience is on track for its opt-in preview launch, built from validated interaction patterns and closed audit findings rather than new concept exploration.</li>
           </ul>
 
           <p class="lead-in">Why it mattered</p>
@@ -146,6 +150,7 @@
             <li>Unblocked Dark Mode and High-Contrast implementation without design debt.</li>
             <li>Improved accessibility, contrast consistency, and long-session usability.</li>
             <li>Strengthened design and engineering collaboration through shared system ownership.</li>
+            <li>Laid part of the foundation for RadCode&rsquo;s own component package too: <code>@radcode/design-system</code> is built directly on the same official Radius components and design tokens, so anything prototyped there inherits the same system truths as production.</li>
           </ul>
         </div>
       </details>
@@ -174,11 +179,7 @@
             <li>Helped define clear UX patterns for administrative actions such as configuration, validation, and system feedback.</li>
           </ul>
 
-          <div class="case-media-row">
-            <div class="case-media"><img src="assets/projects/moodys/vpn-architecture-diagram.jpg" alt="Moody's VPN for Data Bridge design diagram, showing client infrastructure connecting over a secure tunnel to IRP infrastructure"></div>
-            <div class="case-media"><img src="assets/projects/moodys/vpn-configuration-screen.jpg" alt="Moody's Data Bridge VPN Configuration screen, with tunnel, routing, and encryption settings"></div>
-          </div>
-          <p class="case-media-caption">As shipped: <a href="https://www.moodys.com/web/en/us/insights/insurance/introducing-moodys-vpn-for-data-bridge.html" target="_blank" rel="noopener">Moody&rsquo;s VPN for Data Bridge, official announcement &rarr;</a></p>
+          <p>The VPN work shipped publicly as <a href="https://www.moodys.com/web/en/us/insights/insurance/introducing-moodys-vpn-for-data-bridge.html" target="_blank" rel="noopener">Moody&rsquo;s VPN for Data Bridge</a>, see the official announcement for the shipped result.</p>
         </div>
       </details>
 
@@ -281,7 +282,7 @@
       </details>
     </div>
 
-    <p class="note">This project is under NDA: some designs and details can&rsquo;t be shown publicly. Reach out directly for more. For the rapid-prototyping and AI-tooling practice that grew out of this engagement, see <a href="radcode.html">RadCode</a>.</p>
+    <p class="note">This project is under NDA: some designs and details can&rsquo;t be shown publicly. Reach out directly for more.</p>
   </div>
 
   <div class="case-next">
