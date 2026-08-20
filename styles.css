@@ -502,6 +502,14 @@ img { max-width: 100%; display: block; }
 .case-media-row .case-media { margin: 0; }
 @media (max-width: 640px) { .case-media-row { grid-template-columns: 1fr; } }
 
+/* Sits directly under a .case-media / .case-media-row to cite a public
+   source (e.g. a shipped feature announcement) backing the claim above it. */
+.case-media-caption {
+  font-size: 12.5px; color: var(--fg-faint); text-align: center; margin: -22px 0 28px;
+}
+.case-media-caption a { color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px; }
+.case-media-caption a:hover { color: var(--fg); }
+
 .case-placeholder {
   aspect-ratio: 16 / 9; border-radius: 16px; border: 1px dashed var(--border);
   background: var(--bg-alt-2); margin: 32px 0;
