@@ -68,9 +68,45 @@
     </ul>
 
     <h2>Key Initiatives &amp; Contributions</h2>
-    <p>Three initiatives I led in depth, spanning design systems, platform governance, and error handling. Expand each for the full scope, approach, and outcomes.</p>
+    <p>Four initiatives I led in depth, spanning AI-assisted workflows, design systems, platform governance, and error handling. Expand each for the full scope, approach, and outcomes.</p>
 
     <div class="case-init-list">
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.5" y2="15.5"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">AI-Assisted Workflows</span>
+              <span class="case-init-title">Auditing an AI-Generated Prototype Against the Design System</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p>Non-SQL users needed a way to ask questions about risk data directly, instead of waiting on an analyst for every request. What made this initiative different wasn&rsquo;t the chatbot itself &mdash; it was how the first version of it came to exist.</p>
+          <p>The PM took the requirements and, using an AI rapid-prototyping tool, turned them into a clickable chatbot prototype independently &mdash; a small but telling sign of how design and product roles are shifting as AI tools make it possible to go from requirements to a working UI without a designer in the loop. The prototype captured the scope, but it had no grounding in our actual design system: RadCode, our team&rsquo;s own rapid-prototyping monorepo, built on Radius components and CSS tokens, with documentation written specifically for LLMs to follow. The PM&rsquo;s version was visually improvised from scope alone, not built from real patterns.</p>
+          <p>That forced a question I hadn&rsquo;t had to answer this directly before: <strong>what is my role when a non-designer can already produce a &ldquo;good enough&rdquo; clickable prototype with AI?</strong> The answer was to shift from making the pixels to auditing them.</p>
+          <p class="lead-in">My audit covered three layers</p>
+          <ul>
+            <li><strong>Requirements fit:</strong> checked the prototype against its own stated scope, flagging gaps between what was asked for and what was actually built.</li>
+            <li><strong>Usability &amp; trust:</strong> evaluated the flow against interaction and trust standards the original prototype hadn&rsquo;t accounted for &mdash; source citations, verifiable answers, structured output.</li>
+            <li><strong>Design system fit:</strong> mapped the AI-generated UI back onto our actual component library and tokens, rather than letting an improvised visual language ship as-is.</li>
+          </ul>
+          <p class="lead-in">Non-negotiable requirements I introduced</p>
+          <ul>
+            <li>Every answer must cite its sources and show the underlying query it ran, or it isn&rsquo;t allowed to respond at all: no unverifiable answers.</li>
+            <li>Answers surface as tables, charts, and maps, not just text, so results are usable without a second export step.</li>
+            <li>A full conversation can be saved, reopened, and shared, so an investigation is reproducible, not a one-off chat.</li>
+          </ul>
+          <p class="lead-in">Setting the quality bar</p>
+          <p>I pushed for explicit, measurable success criteria instead of a subjective &ldquo;it feels fast enough&rdquo;: answers in around 10 seconds, with anything over a minute treated as a failure state, and a fixed set of known-good test questions the AI has to pass before every release. Rollout was scoped as opt-in and internal-first, a deliberate trust-building sequence rather than a broad launch.</p>
+          <p class="lead-in">Why it mattered</p>
+          <p>AI tools are changing who can produce a first draft of an interface, but that draft still needs someone accountable for whether it&rsquo;s usable, trustworthy, and consistent with the system it has to live inside. This became a template for how design partners with AI-assisted prototyping elsewhere on the platform: move fast with AI, audit against the system and the user, and don&rsquo;t confuse a plausible-looking prototype with a validated one.</p>
+        </div>
+      </details>
+
       <details class="case-init case-init-featured" open>
         <summary>
           <span class="case-init-lead">
@@ -182,7 +218,7 @@
     </div>
 
     <h2>Other Initiatives Across the Platform</h2>
-    <p>A quick look at a few more initiatives across the platform&rsquo;s five products, to show the range of problems I work on beyond the three above. Expand each for a quick overview.</p>
+    <p>A quick look at a couple more initiatives across the platform&rsquo;s five products, to show the range of problems I work on beyond the four above. Expand each for a quick overview.</p>
 
     <div class="case-init-list">
       <details class="case-init">
@@ -234,32 +270,6 @@
           </ul>
           <p class="lead-in">Why it mattered</p>
           <p>The saved &ldquo;map views&rdquo; and &ldquo;map templates&rdquo; pattern was the key design decision: without it, every analysis would mean rebuilding the same filters and layers from scratch, which would have made the whole capability unusable at real-world scale.</p>
-        </div>
-      </details>
-
-      <details class="case-init">
-        <summary>
-          <span class="case-init-lead">
-            <span class="case-init-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-            </span>
-            <span class="case-init-heading">
-              <span class="case-init-tag">Risk Data Lake</span>
-              <span class="case-init-title">Designing Trust Into an AI Query Assistant</span>
-            </span>
-          </span>
-          <span class="plus"></span>
-        </summary>
-        <div class="case-init-body">
-          <p>Non-SQL users needed a way to ask questions about risk data directly, instead of waiting on an analyst for every request. I led the UX scope for a conversational AI assistant, where the core design challenge wasn&rsquo;t the chat interface. It was trust.</p>
-          <p class="lead-in">Non-negotiable requirements</p>
-          <ul>
-            <li>Every answer must cite its sources and show the underlying query it ran, or it isn&rsquo;t allowed to respond at all: no unverifiable answers.</li>
-            <li>Answers surface as tables, charts, and maps, not just text, so results are usable without a second export step.</li>
-            <li>A full conversation can be saved, reopened, and shared, so an investigation is reproducible, not a one-off chat.</li>
-          </ul>
-          <p class="lead-in">Setting the quality bar</p>
-          <p>I pushed for explicit, measurable success criteria instead of a subjective &ldquo;it feels fast enough&rdquo;: answers in around 10 seconds, with anything over a minute treated as a failure state, and a fixed set of known-good test questions the AI has to pass before every release. Rollout was scoped as opt-in and internal-first, a deliberate trust-building sequence rather than a broad launch.</p>
         </div>
       </details>
     </div>
