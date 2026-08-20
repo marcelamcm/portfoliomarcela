@@ -1,6 +1,6 @@
-# Marcela Macedo — Portfolio
+# Marcela Macedo, Portfolio
 
-Rebuild of Marcela's product design portfolio. Plain HTML/CSS, no build step —
+Rebuild of Marcela's product design portfolio. Plain HTML/CSS, no build step:
 open `index.html` in a browser, or view it live via GitHub Pages (see
 **Deploying**, below).
 
@@ -19,31 +19,31 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
 - ✅ **Case study pages** for **Moody's** ([moodys.html](moodys.html)),
   **RadCode** ([radcode.html](radcode.html)), and **Chloé**
   ([chloe.html](chloe.html)), sourced from `cv-master.md`. RadCode split out
-  of the Moody's page (2026-08-19) — Moody's stays a client case study,
+  of the Moody's page (2026-08-19): Moody's stays a client case study,
   RadCode is the separate rapid-prototyping / AI-tooling practice piece that
   grew out of that engagement, framed as personal R&D rather than a client
   deliverable. The two link to each other. Chanel and Richemont cards on the
   home page are marked "Case study coming soon" until their pages are
   written.
-- ✅ **About photo** — real photobooth strip at
+- ✅ **About photo**: real photobooth strip at
   `assets/about/photobooth.png`, right-aligned next to the intro paragraph.
-- ✅ **Tag pills** — Moody's card/case-study uses an `AI` tag instead of
+- ✅ **Tag pills**: Moody's card/case-study uses an `AI` tag instead of
   `Figma` (the Nagarro engagement's AI-driven work). Apply the same to any
   future Mercedes-Benz card. Chanel/Chloé/Richemont keep `Figma`.
-- ⏳ **"Download resume" button removed** for now — no resume PDF in the
-  repo yet. Re-add once `resume.pdf` exists (see `.btn` in `index.html`'s
-  about section).
-- ⏳ Chanel and Richemont case study pages — not built yet.
-- ⏳ Off-White and Foursource have no imagery yet — add project cards for
+- ⏳ **"Download resume" button removed** for now, since there's no resume
+  PDF in the repo yet. Re-add once `resume.pdf` exists (see `.btn` in
+  `index.html`'s about section).
+- ⏳ Chanel and Richemont case study pages, not built yet.
+- ⏳ Off-White and Foursource have no imagery yet, add project cards for
   them once assets exist.
-- ✅ **Moody's case study images** (2026-08-20) — the three `.case-placeholder`
-  blocks in `moodys.html` are now real screenshots: a token table + tri-theme
-  comparison for the Design System section (`token-table.jpg`, `Themes.png`),
-  the Databases management screen for Data Administration
+- ✅ **Moody's case study images** (2026-08-20): the three `.case-placeholder`
+  blocks in `moodys.html` are now real screenshots, a token table plus
+  tri-theme comparison for the Design System section (`token-table.jpg`,
+  `Themes.png`), the Databases management screen for Data Administration
   (`data-admin-databases.jpg`), and the Manage Jobs / structured error log
   flow for Analysis Log (`analysislogmock.png`). Some of these are real
   product screenshots (not just Figma mockups) pulled from
-  `assets/projects/moodys/case studies 2025.pdf` — that source PDF stays
+  `assets/projects/moodys/case studies 2025.pdf`; that source PDF stays
   gitignored (NDA note below), but Marcela has cleared these specific derived
   crops for public use. Also fixed the page's stale `<title>`/meta
   description, which still said "Risk Modeler" after the homepage card copy
@@ -53,10 +53,10 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
 
 The original flat `assets/projects/*.jpg` files (moodys/chanel/chloé/
 richemont hero + card shots) disappeared from disk outside of any edit made
-in this repo — not deleted via any command run here, and they were never
-committed to git, so there was no local history to restore from. Marcela
-re-supplied one image per brand, organized into per-brand subfolders. The
-site now points at those:
+in this repo. They weren't deleted via any command run here, and they were
+never committed to git, so there was no local history to restore from.
+Marcela re-supplied one image per brand, organized into per-brand
+subfolders. The site now points at those:
 
 ```
 assets/projects/moodys/moodys-card.png
@@ -66,14 +66,14 @@ assets/projects/richemont/richemont-card.png
 ```
 
 Each case study page (`moodys.html`, `chloe.html`) now reuses that single
-brand image for both the hero banner and the in-body media — there's only
+brand image for both the hero banner and the in-body media. There's only
 one image per brand at the moment, so the earlier "second image" spot in
 each case study was removed rather than left broken. Add a second image per
 brand and reintroduce a `.case-media` block in the case study page whenever
 more imagery exists.
 
 **Going forward:** keep new project images inside `assets/projects/<brand>/`
-(one folder per brand) rather than flat in `assets/projects/` — matches how
+(one folder per brand) rather than flat in `assets/projects/`, matching how
 Marcela's been adding them.
 
 ## Structure
@@ -100,7 +100,7 @@ exist yet) and point the relevant `<img src="...">` at it.
 
 Already wired up: GitHub Pages serves straight from the repo root on `main`,
 and redeploys automatically a minute or two after every push. Nothing to run
-locally — push, then refresh the live URL above.
+locally, just push, then refresh the live URL above.
 
 ## Next session
 

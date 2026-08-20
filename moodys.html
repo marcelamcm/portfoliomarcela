@@ -85,20 +85,20 @@
           <span class="plus"></span>
         </summary>
         <div class="case-init-body">
-          <p>The RDL AI Agent is a conversational assistant inside Risk Data Lake that lets non-SQL users &mdash; risk analysts, underwriters, and portfolio managers &mdash; ask questions about risk data directly, instead of waiting on an analyst or writing SQL for every request.</p>
+          <p>The RDL AI Agent is a conversational assistant inside Risk Data Lake that lets non-SQL users, including risk analysts, underwriters, and portfolio managers, ask questions about risk data directly, instead of waiting on an analyst or writing SQL for every request.</p>
           <p><strong>Problem:</strong> analysts were a bottleneck for anyone who needed an answer from Risk Data Lake but couldn&rsquo;t query it themselves, slowing down everyday questions that didn&rsquo;t need a full ad hoc analysis.</p>
 
           <div class="case-callout">
             <p class="case-callout-label">The challenge</p>
-            <p>The PM took the requirements and, using an AI rapid-prototyping tool, turned them into a clickable chatbot prototype independently &mdash; a small but telling sign of how design and product roles are shifting as AI tools make it possible to go from requirements to a working UI without a designer in the loop. The prototype captured the scope, but it had no grounding in our actual design system: RadCode, our team&rsquo;s own rapid-prototyping monorepo, built on Radius components and CSS tokens, with documentation written specifically for LLMs to follow. It was visually improvised from scope alone, not built from real patterns.</p>
+            <p>The PM took the requirements and, using an AI rapid-prototyping tool, turned them into a clickable chatbot prototype independently. It&rsquo;s a small but telling sign of how design and product roles are shifting as AI tools make it possible to go from requirements to a working UI without a designer in the loop. The prototype captured the scope, but it had no grounding in our actual design system: RadCode, our team&rsquo;s own rapid-prototyping monorepo, built on Radius components and CSS tokens, with documentation written specifically for LLMs to follow. It was visually improvised from scope alone, not built from real patterns.</p>
             <p>That forced a question I hadn&rsquo;t had to answer this directly before: <strong>what is my role when a non-designer can already produce a &ldquo;good enough&rdquo; clickable prototype with AI?</strong></p>
           </div>
 
-          <p>My answer was to shift from making the pixels to auditing them &mdash; using the prototype as a starting point, not a finished design, and checking it against everything it hadn&rsquo;t been checked against yet.</p>
+          <p>My answer was to shift from making the pixels to auditing them: using the prototype as a starting point, not a finished design, and checking it against everything it hadn&rsquo;t been checked against yet.</p>
           <p class="lead-in">My audit covered three layers</p>
           <ul>
             <li><strong>Requirements fit:</strong> checked the prototype against its own stated scope, flagging gaps between what was asked for and what was actually built.</li>
-            <li><strong>Usability &amp; best practices:</strong> evaluated the flow against interaction design standards and general best practices &mdash; not just whether it worked, but whether it held up.</li>
+            <li><strong>Usability &amp; best practices:</strong> evaluated the flow against interaction design standards and general best practices, not just whether it worked, but whether it held up.</li>
             <li><strong>Design system fit:</strong> mapped the AI-generated UI back onto our actual component library and tokens, rather than letting an improvised visual language ship as-is.</li>
           </ul>
 
