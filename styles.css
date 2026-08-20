@@ -608,3 +608,30 @@ img { max-width: 100%; display: block; }
 }
 .case-next a:hover { color: var(--accent-2); }
 .case-next .label { display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-faint); margin-bottom: 14px; font-family: 'Inter', sans-serif; font-weight: 600; }
+
+/* Jargon tooltips: an underlined term shows a short definition on hover
+   (desktop), keyboard focus, or tap (touch, toggled via JS in the page
+   script). Used for platform/product names and team tools that a
+   first-time reader wouldn't otherwise recognize. */
+.term {
+  border-bottom: 1px dotted var(--fg-faint); cursor: help; position: relative;
+  color: inherit;
+}
+.term:hover, .term:focus, .term.is-open { color: var(--periwinkle); outline: none; }
+.term .tip {
+  position: absolute; left: 50%; bottom: calc(100% + 9px); transform: translateX(-50%);
+  width: max-content; max-width: 260px; background: var(--bg-alt-2); color: var(--fg);
+  font-size: 12.5px; font-weight: 400; line-height: 1.5; padding: 10px 12px; border-radius: 10px;
+  border: 1px solid var(--border); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0; visibility: hidden; transition: opacity 0.15s ease; pointer-events: none;
+  z-index: 20; text-align: left; text-transform: none; letter-spacing: normal;
+}
+.term:hover .tip, .term:focus .tip, .term.is-open .tip { opacity: 1; visibility: visible; }
+.term .tip::after {
+  content: ""; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  border: 6px solid transparent; border-top-color: var(--bg-alt-2);
+}
+@media (max-width: 480px) {
+  .term .tip { left: 0; transform: none; max-width: 220px; }
+  .term .tip::after { left: 20px; transform: none; }
+}

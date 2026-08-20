@@ -34,13 +34,13 @@
     <h2>Overview</h2>
 
     <div class="case-tldr">
-      Moody&rsquo;s is a global provider of data, analytics, and risk assessment solutions used by organizations operating in highly regulated and high-stakes environments. As a product designer within Nagarro Digital Ventures&rsquo; engagement, I&rsquo;ve worked across five platform products: Data Admin, Data Bridge, Risk Data Lake, Exposure IQ, and TreatyIQ, <strong>auditing and redesigning an AI-generated chat agent</strong> against our own design system, restructuring the <strong>design system into a token-based architecture</strong>, redesigning <strong>data administration and access control</strong>, and rebuilding <strong>error messaging and analysis logs</strong>, so analysts across financial services, insurance, and public sector contexts can confidently navigate, understand, and act on critical data.
+      Moody&rsquo;s is a global provider of data, analytics, and risk assessment solutions used by organizations operating in highly regulated and high-stakes environments. As a product designer within Nagarro Digital Ventures&rsquo; engagement, I&rsquo;ve worked across five platform products: <span class="term" tabindex="0">Data Admin<span class="tip" role="tooltip">The platform layer governing user access, permissions, and infrastructure across all IRP products.</span></span>, <span class="term" tabindex="0">Data Bridge<span class="tip" role="tooltip">A Moody&rsquo;s product connecting an organization&rsquo;s own infrastructure to its risk data, including secure VPN access.</span></span>, <span class="term" tabindex="0">Risk Data Lake<span class="tip" role="tooltip">A Moody&rsquo;s product where insurance and reinsurance risk data is stored and queried, like a data warehouse built for the industry.</span></span>, <span class="term" tabindex="0">Exposure IQ<span class="tip" role="tooltip">A Moody&rsquo;s product for analyzing insurance risk exposure geospatially, mapping where risk concentrates across a portfolio.</span></span>, and <span class="term" tabindex="0">TreatyIQ<span class="tip" role="tooltip">A Moody&rsquo;s product for reinsurance treaty analysis and portfolio management.</span></span>, <strong>auditing and redesigning an AI-generated chat agent</strong> against our own design system, restructuring the <strong>design system into a token-based architecture</strong>, redesigning <strong>data administration and access control</strong>, and rebuilding <strong>error messaging and analysis logs</strong>, so analysts across financial services, insurance, and public sector contexts can confidently navigate, understand, and act on critical data.
     </div>
 
     <div class="case-stats">
       <div class="case-stat"><span class="num">5</span><span class="label">Platform products designed for</span></div>
       <div class="case-stat"><span class="num">1-2</span><span class="label">PMs per product</span></div>
-      <div class="case-stat"><span class="num">200+</span><span class="label">Engineers across all IRP products</span></div>
+      <div class="case-stat"><span class="num">200+</span><span class="label">Engineers across all <span class="term" tabindex="0">IRP<span class="tip" role="tooltip">Intelligent Risk Platform: Moody&rsquo;s suite of insurance and reinsurance risk products.</span></span> products</span></div>
       <div class="case-stat"><span class="num">3</span><span class="label">Themes shipped: Light, Dark, High Contrast</span></div>
       <div class="case-stat"><span class="num">40+</span><span class="label">Countries served by these platforms</span></div>
     </div>
@@ -87,12 +87,12 @@
           <span class="plus"></span>
         </summary>
         <div class="case-init-body">
-          <p>The RDL AI Agent, internally nicknamed Caspian, is a conversational assistant inside Risk Data Lake that lets non-SQL users, including underwriters, portfolio managers, and analysts, ask questions about risk data in plain English and get back an answer with the data, the chart, and proof of where it came from.</p>
+          <p>The RDL AI Agent is a conversational assistant inside Risk Data Lake that lets non-SQL users, including underwriters, portfolio managers, and analysts, ask questions about risk data in plain English and get back an answer with the data, the chart, and proof of where it came from.</p>
           <p><strong>Problem:</strong> anyone who couldn&rsquo;t write SQL depended on an analyst for even a quick number, so everyday questions waited in a queue behind full ad hoc analysis work.</p>
 
           <div class="case-callout">
             <p class="case-callout-label">The challenge</p>
-            <p>The PM took the requirements and, using an AI rapid-prototyping tool, turned them into a clickable chatbot prototype independently. It&rsquo;s a small but telling sign of how design and product roles are shifting as AI tools make it possible to go from requirements to a working UI without a designer in the loop. The prototype captured the scope, but it had no grounding in our actual design system: RadCode, our team&rsquo;s own rapid-prototyping monorepo, built on Radius components and CSS tokens, with documentation written specifically for LLMs to follow. It was visually improvised from scope alone, not built from real patterns.</p>
+            <p>The PM took the requirements and, using an AI rapid-prototyping tool, turned them into a clickable chatbot prototype independently. It&rsquo;s a small but telling sign of how design and product roles are shifting as AI tools make it possible to go from requirements to a working UI without a designer in the loop. The prototype captured the scope, but it had no grounding in our actual design system: <span class="term" tabindex="0">RadCode<span class="tip" role="tooltip">A rapid-prototyping codebase the design team built to turn Figma designs into working React prototypes using AI-assisted tooling.</span></span>, our team&rsquo;s own rapid-prototyping monorepo, built on <span class="term" tabindex="0">Radius<span class="tip" role="tooltip">Moody&rsquo;s official design system and component library, used across production IRP products.</span></span> components and CSS tokens, with documentation written specifically for LLMs to follow. It was visually improvised from scope alone, not built from real patterns.</p>
             <p>That forced a question I hadn&rsquo;t had to answer this directly before: <strong>what is my role when a non-designer can already produce a &ldquo;good enough&rdquo; clickable prototype with AI?</strong></p>
           </div>
 
@@ -115,12 +115,12 @@
               <div class="ui-anatomy-region ui-anatomy-header">
                 <p class="ui-anatomy-region-title">Header</p>
                 <p class="ui-anatomy-region-desc">Entry point, session controls</p>
-                <span class="ui-anatomy-tag ui-anatomy-tag-system">CaspianHeader &middot; Radius</span>
+                <span class="ui-anatomy-tag ui-anatomy-tag-system">AgentHeader &middot; Radius</span>
               </div>
               <div class="ui-anatomy-region ui-anatomy-history">
                 <p class="ui-anatomy-region-title">History panel</p>
                 <p class="ui-anatomy-region-desc">Prior sessions</p>
-                <span class="ui-anatomy-tag ui-anatomy-tag-system">CaspianHistory &middot; Radius</span>
+                <span class="ui-anatomy-tag ui-anatomy-tag-system">AgentHistory &middot; Radius</span>
               </div>
               <div class="ui-anatomy-region ui-anatomy-thread">
                 <p class="ui-anatomy-region-title">Message thread / empty state</p>
@@ -350,5 +350,26 @@
       <span>&copy; 2026 marcela macedo</span>
     </div>
   </footer>
+
+  <script>
+    // Jargon tooltips: hover and keyboard focus already work via CSS.
+    // This just adds tap-to-toggle for touch devices, plus dismissal.
+    document.querySelectorAll('.term').forEach(term => {
+      term.addEventListener('click', (e) => {
+        const wasOpen = term.classList.contains('is-open');
+        document.querySelectorAll('.term.is-open').forEach(t => t.classList.remove('is-open'));
+        if (!wasOpen) term.classList.add('is-open');
+        e.stopPropagation();
+      });
+    });
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.term.is-open').forEach(t => t.classList.remove('is-open'));
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.term.is-open').forEach(t => t.classList.remove('is-open'));
+      }
+    });
+  </script>
 </body>
 </html>
