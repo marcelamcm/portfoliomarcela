@@ -32,15 +32,14 @@
 
   <div class="case-body">
     <h2>Overview</h2>
-    <p class="case-glance-sub">The short version, for anyone reading on the way into a meeting.</p>
 
     <div class="case-tldr">
-      Moody&rsquo;s is a global provider of data, analytics, and risk assessment solutions used by organizations operating in highly regulated and high-stakes environments. As a product designer within Nagarro Digital Ventures&rsquo; engagement, I&rsquo;ve worked across five platform products: Data Admin, Data Bridge, Risk Data Lake, Exposure IQ, and TreatyIQ, restructuring the <strong>design system into a token-based architecture</strong>, redesigning <strong>data administration and access control</strong>, and rebuilding <strong>error messaging and analysis logs</strong>, so analysts across financial services, insurance, and public sector contexts can confidently navigate, understand, and act on critical data.
+      Moody&rsquo;s is a global provider of data, analytics, and risk assessment solutions used by organizations operating in highly regulated and high-stakes environments. As a product designer within Nagarro Digital Ventures&rsquo; engagement, I&rsquo;ve worked across five platform products: Data Admin, Data Bridge, Risk Data Lake, Exposure IQ, and TreatyIQ, <strong>auditing and redesigning an AI-generated chat agent</strong> against our own design system, restructuring the <strong>design system into a token-based architecture</strong>, redesigning <strong>data administration and access control</strong>, and rebuilding <strong>error messaging and analysis logs</strong>, so analysts across financial services, insurance, and public sector contexts can confidently navigate, understand, and act on critical data.
     </div>
 
     <div class="case-stats">
       <div class="case-stat"><span class="num">5</span><span class="label">Platform products designed for</span></div>
-      <div class="case-stat"><span class="num">1-2</span><span class="label">PMs collaborated with, per product</span></div>
+      <div class="case-stat"><span class="num">1-2</span><span class="label">PMs per product</span></div>
       <div class="case-stat"><span class="num">200+</span><span class="label">Engineers across all IRP products</span></div>
       <div class="case-stat"><span class="num">3</span><span class="label">Themes shipped: Light, Dark, High Contrast</span></div>
       <div class="case-stat"><span class="num">40+</span><span class="label">Countries served by these platforms</span></div>
@@ -50,13 +49,16 @@
 
     <h2>Problem Space</h2>
     <p>Moody&rsquo;s products operate in a highly technical domain, where users navigate large volumes of structured and unstructured data, perform advanced tasks like querying, cataloging, and risk analysis, and expect precision, transparency, and performance throughout.</p>
-    <p>Key challenges identified across the initiatives I&rsquo;ve worked on:</p>
-    <ul>
-      <li>Fragmented workflows between tools and external platforms.</li>
-      <li>Steep learning curve for non-technical or semi-technical users.</li>
-      <li>Limited discoverability of data assets and actions.</li>
-      <li>Inconsistent UX patterns across integrated solutions.</li>
-    </ul>
+
+    <div class="case-chip-group">
+      <div class="gtitle">Key challenges identified across the initiatives I&rsquo;ve worked on</div>
+      <div class="case-chips">
+        <span class="case-chip">Fragmented workflows between tools and external platforms</span>
+        <span class="case-chip">Steep learning curve for non-technical users</span>
+        <span class="case-chip">Limited discoverability of data assets and actions</span>
+        <span class="case-chip">Inconsistent UX patterns across integrated solutions</span>
+      </div>
+    </div>
 
     <h2>My Role &amp; Approach</h2>
     <ul>
@@ -107,7 +109,41 @@
           <p class="lead-in">Extending the system, not working around it</p>
           <p>Roughly a quarter of what the chat interface needed, things like message bubbles and sender/receiver treatment, didn&rsquo;t exist in the core design system yet. Rather than hardcoding one-off components for this feature, I used atomic design principles: building new patterns as atoms of the existing library, so the system grows instead of collecting exceptions to it.</p>
 
-          <div class="case-media"><img src="assets/projects/moodys/ai-chat-anatomy.png" alt="AI chat interface anatomy: Header and History panel built from existing Radius components, with the message thread and composer as new custom components"></div>
+          <div class="ui-anatomy">
+            <p class="ui-anatomy-label">Agent chat interface</p>
+            <div class="ui-anatomy-grid">
+              <div class="ui-anatomy-region ui-anatomy-header">
+                <p class="ui-anatomy-region-title">Header</p>
+                <p class="ui-anatomy-region-desc">Entry point, session controls</p>
+                <span class="ui-anatomy-tag ui-anatomy-tag-system">CaspianHeader &middot; Radius</span>
+              </div>
+              <div class="ui-anatomy-region ui-anatomy-history">
+                <p class="ui-anatomy-region-title">History panel</p>
+                <p class="ui-anatomy-region-desc">Prior sessions</p>
+                <span class="ui-anatomy-tag ui-anatomy-tag-system">CaspianHistory &middot; Radius</span>
+              </div>
+              <div class="ui-anatomy-region ui-anatomy-thread">
+                <p class="ui-anatomy-region-title">Message thread / empty state</p>
+                <p class="ui-anatomy-region-desc">Prompt cards or conversation</p>
+                <div class="ui-anatomy-tag-row">
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Starter Cards</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Thinking State</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">User Bubble</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Answer Text</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Viz Block</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">SQL Block</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Response Receipts</span>
+                  <span class="ui-anatomy-tag ui-anatomy-tag-new">Disclosure</span>
+                </div>
+              </div>
+              <div class="ui-anatomy-region ui-anatomy-composer">
+                <p class="ui-anatomy-region-title">Composer</p>
+                <p class="ui-anatomy-region-desc">Input, send, attachments</p>
+                <span class="ui-anatomy-tag ui-anatomy-tag-new">Composer</span>
+              </div>
+            </div>
+            <p class="ui-anatomy-legend"><span><span class="dot dot-system"></span>Existing Radius component</span><span><span class="dot dot-new"></span>New custom component</span></p>
+          </div>
 
           <p class="lead-in">Outcomes</p>
           <ul>
@@ -152,7 +188,6 @@
             <li>Unblocked Dark Mode and High-Contrast implementation without design debt.</li>
             <li>Improved accessibility, contrast consistency, and long-session usability.</li>
             <li>Strengthened design and engineering collaboration through shared system ownership.</li>
-            <li>Laid part of the foundation for RadCode&rsquo;s own component package too: <code>@radcode/design-system</code> is built directly on the same official Radius components and design tokens, so anything prototyped there inherits the same system truths as production.</li>
           </ul>
         </div>
       </details>
@@ -181,7 +216,7 @@
             <li>Helped define clear UX patterns for administrative actions such as configuration, validation, and system feedback.</li>
           </ul>
 
-          <p>The VPN work shipped publicly as <a href="https://www.moodys.com/web/en/us/insights/insurance/introducing-moodys-vpn-for-data-bridge.html" target="_blank" rel="noopener">Moody&rsquo;s VPN for Data Bridge</a>, see the official announcement for the shipped result.</p>
+          <p>The VPN work shipped publicly as <a href="https://www.moodys.com/web/en/us/insights/insurance/introducing-moodys-vpn-for-data-bridge.html?linkId=40880569" target="_blank" rel="noopener">Moody&rsquo;s VPN for Data Bridge</a>, see the official announcement for the shipped result.</p>
         </div>
       </details>
 

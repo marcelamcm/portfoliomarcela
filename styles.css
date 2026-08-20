@@ -305,7 +305,7 @@ img { max-width: 100%; display: block; }
 
 .case-stats {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 12px; margin: 0 0 32px;
+  gap: 12px; margin: 0 0 32px; align-items: start;
 }
 @media (max-width: 640px) { .case-stats { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 380px) { .case-stats { grid-template-columns: 1fr; } }
@@ -538,6 +538,57 @@ img { max-width: 100%; display: block; }
 .case-callout p { color: var(--fg); font-size: 15px; line-height: 1.7; margin: 0 0 12px; max-width: none; }
 .case-callout p:last-child { margin-bottom: 0; }
 .case-callout strong { color: var(--fg); }
+
+/* Native UI-anatomy diagram: a lightweight on-brand stand-in for a
+   labeled interface map (which regions come from the existing system vs.
+   which are new), built from real markup instead of a screenshotted
+   image so it inherits the theme rather than fighting it. */
+.ui-anatomy {
+  border-radius: 18px; padding: 24px; margin: 28px 0;
+  background: linear-gradient(155deg, var(--bg-alt) 0%, var(--bg-alt-2) 100%);
+  box-shadow: inset 0 0 0 1px rgba(243, 239, 228, 0.06);
+}
+.ui-anatomy .ui-anatomy-label {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--fg-faint); margin: 0 0 14px; max-width: none;
+}
+.ui-anatomy-grid {
+  display: grid; grid-template-columns: 1fr 2fr; grid-template-rows: auto auto auto; gap: 10px;
+}
+.ui-anatomy-header { grid-column: 1 / -1; grid-row: 1; }
+.ui-anatomy-history { grid-column: 1; grid-row: 2 / 4; }
+.ui-anatomy-thread { grid-column: 2; grid-row: 2; }
+.ui-anatomy-composer { grid-column: 2; grid-row: 3; }
+.ui-anatomy-region { border-radius: 12px; padding: 14px 16px; border: 1px solid; }
+.ui-anatomy-header { background: var(--periwinkle-dim); border-color: rgba(169, 189, 242, 0.35); }
+.ui-anatomy-history { background: rgba(195, 174, 240, 0.1); border-color: rgba(195, 174, 240, 0.3); }
+.ui-anatomy-thread { background: rgba(243, 239, 228, 0.04); border-color: var(--border); }
+.ui-anatomy-composer { background: rgba(243, 239, 228, 0.03); border-color: var(--border); }
+.ui-anatomy .ui-anatomy-region-title {
+  font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 14px; color: var(--fg); margin: 0 0 3px;
+}
+.ui-anatomy .ui-anatomy-region-desc { font-size: 12px; color: var(--fg-dim); margin: 0 0 10px; max-width: none; }
+.ui-anatomy-tag {
+  display: inline-block; font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
+  margin: 0 4px 4px 0;
+}
+.ui-anatomy-tag-system { color: var(--periwinkle); background: rgba(169, 189, 242, 0.16); }
+.ui-anatomy-tag-new { color: var(--lilac); background: var(--lilac-dim); }
+.ui-anatomy-tag-row { display: flex; flex-wrap: wrap; gap: 0; }
+.ui-anatomy .ui-anatomy-legend {
+  font-size: 11.5px; color: var(--fg-faint); margin: 16px 0 0; display: flex; align-items: center; gap: 18px;
+  max-width: none;
+}
+.ui-anatomy-legend .dot {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle;
+}
+.dot-system { background: var(--periwinkle); }
+.dot-new { background: var(--lilac); }
+@media (max-width: 640px) {
+  .ui-anatomy-grid { grid-template-columns: 1fr; }
+  .ui-anatomy-header, .ui-anatomy-history, .ui-anatomy-thread, .ui-anatomy-composer { grid-column: 1; }
+  .ui-anatomy-history, .ui-anatomy-thread, .ui-anatomy-composer { grid-row: auto; }
+}
 
 .case-placeholder {
   aspect-ratio: 16 / 9; border-radius: 16px; border: 1px dashed var(--border);
