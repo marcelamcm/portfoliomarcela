@@ -236,6 +236,8 @@ img { max-width: 100%; display: block; }
 @media (max-width: 760px) { .footer-meta-grid { grid-template-columns: 1fr; gap: 28px; } }
 .footer-meta p { font-size: 14.5px; color: var(--fg-dim); margin: 0 0 10px; }
 .footer-meta p strong { color: var(--fg); font-weight: 600; }
+.footer-meta p a { color: var(--fg-dim); text-decoration: underline; text-underline-offset: 2px; }
+.footer-meta p a:hover { color: var(--fg); }
 .footer-col-label {
   font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--fg-faint); margin: 0 0 14px;
@@ -270,6 +272,8 @@ img { max-width: 100%; display: block; }
   font-size: clamp(36px, 6vw, 64px); line-height: 1; margin: 0 0 18px; text-transform: lowercase;
 }
 .case-role { font-size: 15px; color: var(--fg-faint); margin: 0 0 40px; }
+.case-role a { color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px; }
+.case-role a:hover { color: var(--fg); }
 
 .case-meta-grid {
   display: flex; flex-wrap: wrap; gap: 10px 32px;
@@ -402,6 +406,10 @@ img { max-width: 100%; display: block; }
   font-weight: 600; margin: 22px 0 10px;
 }
 .case-body p { font-size: 16px; line-height: 1.7; color: var(--fg-dim); margin: 0 0 18px; }
+.case-body p a, .case-init-body p a, .case-init-body li a {
+  color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px;
+}
+.case-body p a:hover, .case-init-body p a:hover, .case-init-body li a:hover { color: var(--fg); }
 .case-body code, .case-init-body code {
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 0.9em; color: var(--periwinkle); background: var(--periwinkle-dim);
