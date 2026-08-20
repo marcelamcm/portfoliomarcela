@@ -68,69 +68,117 @@
     </ul>
 
     <h2>Key Initiatives &amp; Contributions</h2>
+    <p>Three initiatives I led in depth, spanning design systems, platform governance, and error handling. Expand each for the full scope, approach, and outcomes.</p>
 
-    <h3>Design System Initiative: Theming, Dark Mode &amp; High Contrast</h3>
-    <p>The existing design system wasn&rsquo;t structured around tokens, which limited scalability and made theming difficult to implement and maintain. This work ran in parallel with feature delivery, prioritizing critical components first to avoid blocking product roadmap commitments.</p>
-    <p><strong>Objective:</strong> enable scalable theming (Dark Mode and High-Contrast) by restructuring the existing design system into a token-based architecture, ensuring accessibility, consistency, and engineering feasibility across data-dense products.</p>
-    <p class="lead-in">Key contributions</p>
-    <ul>
-      <li>Led the restructuring of the design system into a token-based model, defining semantic tokens (intent-based, theme-agnostic) and component tokens (contextual, reusable, and scalable).</li>
-      <li>Mapped legacy styles and components to the new token structure, identifying gaps and inconsistencies.</li>
-      <li>Defined token usage guidelines to support multiple themes without breaking hierarchy or meaning.</li>
-      <li>Worked hands-on with engineering, aligning design decisions with implementation constraints and validating feasibility early.</li>
-    </ul>
+    <div class="case-init-list">
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18z" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">Design System &amp; Theming</span>
+              <span class="case-init-title">Restructuring the Design System Into Design Tokens</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p>The existing design system wasn&rsquo;t structured around tokens, which limited scalability and made theming difficult to implement and maintain. This work ran in parallel with feature delivery, prioritizing critical components first to avoid blocking product roadmap commitments.</p>
+          <p><strong>Objective:</strong> enable scalable theming (Dark Mode and High-Contrast) by restructuring the existing design system into a token-based architecture, ensuring accessibility, consistency, and engineering feasibility across data-dense products.</p>
+          <p class="lead-in">Key contributions</p>
+          <ul>
+            <li>Led the restructuring of the design system into a token-based model, defining semantic tokens (intent-based, theme-agnostic) and component tokens (contextual, reusable, and scalable).</li>
+            <li>Mapped legacy styles and components to the new token structure, identifying gaps and inconsistencies.</li>
+            <li>Defined token usage guidelines to support multiple themes without breaking hierarchy or meaning.</li>
+            <li>Worked hands-on with engineering, aligning design decisions with implementation constraints and validating feasibility early.</li>
+          </ul>
 
-    <div class="case-media-row">
-      <div class="case-media"><img src="assets/projects/moodys/token-table.jpg" alt="Semantic radius and color tokens, with Light, Dark, and High-Contrast values side by side"></div>
-      <div class="case-media"><img src="assets/projects/moodys/Themes.png" alt="The same screen shown in Dark, Light, and High-Contrast theme via the theme settings menu"></div>
+          <div class="case-media-row">
+            <div class="case-media"><img src="assets/projects/moodys/token-table.jpg" alt="Semantic radius and color tokens, with Light, Dark, and High-Contrast values side by side"></div>
+            <div class="case-media"><img src="assets/projects/moodys/Themes.png" alt="The same screen shown in Dark, Light, and High-Contrast theme via the theme settings menu"></div>
+          </div>
+
+          <p class="lead-in">Outcomes</p>
+          <ul>
+            <li>Established a scalable foundation for theming across the platform.</li>
+            <li>Unblocked Dark Mode and High-Contrast implementation without design debt.</li>
+            <li>Improved accessibility, contrast consistency, and long-session usability.</li>
+            <li>Strengthened design and engineering collaboration through shared system ownership.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">Platform Governance</span>
+              <span class="case-init-title">Redesigning Data Administration &amp; Access Control</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p>While analysts and modelers work directly with risk data, Data Admin sits in between all IRP products, ensuring the platform functions safely, reliably, and at scale. This layer governs who can access what, how data flows between environments, and how systems are maintained over time.</p>
+          <p><strong>Scope of work:</strong> platform operations, governance, and cross-product enablement.</p>
+          <p class="lead-in">Key contributions</p>
+          <ul>
+            <li>Designed and refined experiences for user and role management, including permissions and access control across all products.</li>
+            <li>Contributed to flows for secure connectivity and VPN setup, reducing friction in complex infrastructure onboarding.</li>
+            <li>Worked on database management and archiving workflows, supporting data lifecycle, compliance, and long-term maintainability.</li>
+            <li>Helped define clear UX patterns for administrative actions such as configuration, validation, and system feedback.</li>
+          </ul>
+
+          <div class="case-media"><img src="assets/projects/moodys/data-admin-databases.jpg" alt="Data Admin database management screen, listing databases with schema version, owner, and status"></div>
+        </div>
+      </details>
+
+      <details class="case-init case-init-featured" open>
+        <summary>
+          <span class="case-init-lead">
+            <span class="case-init-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="17" r="0.75" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="case-init-heading">
+              <span class="case-init-tag">Error Handling</span>
+              <span class="case-init-title">Rebuilding Error Messaging &amp; Analysis Logs</span>
+            </span>
+          </span>
+          <span class="plus"></span>
+        </summary>
+        <div class="case-init-body">
+          <p>In complex analytical systems, errors are inevitable. What matters is not whether something fails, but whether users can understand why it failed and what to do next. The system communicated failures in a highly technical manner, leaving users without a clear path to resolution.</p>
+          <p>Users had limited visibility into why model runs failed or partially completed. Skipped locations and technical errors were difficult to trace back to specific input data issues, which increased troubleshooting time, led to repeated trial-and-error reruns, and created unnecessary dependency on support teams.</p>
+          <p class="lead-in">Personas</p>
+          <ul>
+            <li><strong>Risk Analysts:</strong> need to quickly understand why a model run produced incomplete or unexpected results.</li>
+            <li><strong>Catastrophe Modelers:</strong> require precise feedback to correct input data and rerun models efficiently.</li>
+            <li><strong>Data Engineers:</strong> depend on structured logs to trace issues and validate data.</li>
+          </ul>
+          <p class="lead-in">Approach</p>
+          <ul>
+            <li>Led UX requirements gathering in close collaboration with Product, Engineering, and Subject Matter Experts.</li>
+            <li>Framed the problem using Jobs to Be Done, aligning system constraints with real user goals.</li>
+            <li>Established a clear conceptual distinction between warnings (informational, non-blocking) and errors (action required).</li>
+            <li>Designed the experience as a layered communication model: immediate, human-readable messages paired with deeper, structured analysis logs.</li>
+          </ul>
+
+          <div class="case-media"><img src="assets/projects/moodys/analysislogmock.png" alt="Manage Jobs and structured analysis log drawer, listing failed locations with error details and severity"></div>
+
+          <p class="lead-in">Outcome</p>
+          <ul>
+            <li>Designed a structured analysis log, readable by humans and consumable by machines (CSV / JSON), including location identifiers, exclusion reasons, and severity classification.</li>
+            <li>Introduced interaction patterns that support sense-making: expanding and collapsing detailed entries, filtering by severity or error type, and copying and exporting logs for collaboration or auditing.</li>
+            <li>Error handling shifted from a reactive, support-driven process to self-service problem solving.</li>
+          </ul>
+        </div>
+      </details>
     </div>
-
-    <p class="lead-in">Outcomes</p>
-    <ul>
-      <li>Established a scalable foundation for theming across the platform.</li>
-      <li>Unblocked Dark Mode and High-Contrast implementation without design debt.</li>
-      <li>Improved accessibility, contrast consistency, and long-session usability.</li>
-      <li>Strengthened design and engineering collaboration through shared system ownership.</li>
-    </ul>
-
-    <h3>Data Administration</h3>
-    <p>While analysts and modelers work directly with risk data, Data Admin sits in between all IRP products, ensuring the platform functions safely, reliably, and at scale. This layer governs who can access what, how data flows between environments, and how systems are maintained over time.</p>
-    <p><strong>Scope of work:</strong> platform operations, governance, and cross-product enablement.</p>
-    <p class="lead-in">Key contributions</p>
-    <ul>
-      <li>Designed and refined experiences for user and role management, including permissions and access control across all products.</li>
-      <li>Contributed to flows for secure connectivity and VPN setup, reducing friction in complex infrastructure onboarding.</li>
-      <li>Worked on database management and archiving workflows, supporting data lifecycle, compliance, and long-term maintainability.</li>
-      <li>Helped define clear UX patterns for administrative actions such as configuration, validation, and system feedback.</li>
-    </ul>
-
-    <div class="case-media"><img src="assets/projects/moodys/data-admin-databases.jpg" alt="Data Admin database management screen, listing databases with schema version, owner, and status"></div>
-
-    <h3>Enhanced Error Messaging &amp; Analysis Log</h3>
-    <p>In complex analytical systems, errors are inevitable. What matters is not whether something fails, but whether users can understand why it failed and what to do next. The system communicated failures in a highly technical manner, leaving users without a clear path to resolution.</p>
-    <p>Users had limited visibility into why model runs failed or partially completed. Skipped locations and technical errors were difficult to trace back to specific input data issues, which increased troubleshooting time, led to repeated trial-and-error reruns, and created unnecessary dependency on support teams.</p>
-    <p class="lead-in">Personas</p>
-    <ul>
-      <li><strong>Risk Analysts:</strong> need to quickly understand why a model run produced incomplete or unexpected results.</li>
-      <li><strong>Catastrophe Modelers:</strong> require precise feedback to correct input data and rerun models efficiently.</li>
-      <li><strong>Data Engineers:</strong> depend on structured logs to trace issues and validate data.</li>
-    </ul>
-    <p class="lead-in">Approach</p>
-    <ul>
-      <li>Led UX requirements gathering in close collaboration with Product, Engineering, and Subject Matter Experts.</li>
-      <li>Framed the problem using Jobs to Be Done, aligning system constraints with real user goals.</li>
-      <li>Established a clear conceptual distinction between warnings (informational, non-blocking) and errors (action required).</li>
-      <li>Designed the experience as a layered communication model: immediate, human-readable messages paired with deeper, structured analysis logs.</li>
-    </ul>
-
-    <div class="case-media"><img src="assets/projects/moodys/analysislogmock.png" alt="Manage Jobs and structured analysis log drawer, listing failed locations with error details and severity"></div>
-
-    <p class="lead-in">Outcome</p>
-    <ul>
-      <li>Designed a structured analysis log, readable by humans and consumable by machines (CSV / JSON), including location identifiers, exclusion reasons, and severity classification.</li>
-      <li>Introduced interaction patterns that support sense-making: expanding and collapsing detailed entries, filtering by severity or error type, and copying and exporting logs for collaboration or auditing.</li>
-      <li>Error handling shifted from a reactive, support-driven process to self-service problem solving.</li>
-    </ul>
 
     <h2>Other Initiatives Across the Platform</h2>
     <p>A quick look at a few more initiatives across the platform&rsquo;s five products, to show the range of problems I work on beyond the three above. Expand each for a quick overview.</p>
