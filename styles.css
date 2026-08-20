@@ -510,6 +510,22 @@ img { max-width: 100%; display: block; }
 .case-media-caption a { color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px; }
 .case-media-caption a:hover { color: var(--fg); }
 
+/* Highlighted aside within a case-init-body — for a specific problem or
+   complication worth calling out on its own, distinct from the surrounding
+   narrative. Reuses the periwinkle = "problems/goals" color convention
+   from .case-chip above. */
+.case-callout {
+  border-left: 3px solid var(--periwinkle); background: var(--periwinkle-dim);
+  border-radius: 0 14px 14px 0; padding: 22px 24px; margin: 24px 0;
+}
+.case-callout .case-callout-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--periwinkle); margin: 0 0 10px;
+}
+.case-callout p { color: var(--fg-dim); font-size: 15px; line-height: 1.7; margin: 0 0 12px; max-width: none; }
+.case-callout p:last-child { margin-bottom: 0; }
+.case-callout strong { color: var(--fg); }
+
 .case-placeholder {
   aspect-ratio: 16 / 9; border-radius: 16px; border: 1px dashed var(--border);
   background: var(--bg-alt-2); margin: 32px 0;
