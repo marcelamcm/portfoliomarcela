@@ -12,19 +12,23 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
   (dark theme, huge Archivo display type, cream-on-black, indigo accent).
   Nav (name / work / about me) → hero (`marcela macedo` + tagline) →
   "companies I have worked with" marquee → **selected work** grid with
-  filter pills (all / enterprise saas / luxury fashion / e-commerce) →
+  filter pills (all / enterprise saas / luxury fashion) →
   **about** section (bio, real photobooth strip, why-work-with-me,
   beyond-the-screen) → footer (contact, pages, socials, big wordmark).
-  Work grid order: Moody's, RadCode, Chloé, Chanel, Richemont.
+  Work grid order: Moody's, RadCode, Chloé, Chanel.
 - ✅ **Case study pages** for **Moody's** ([moodys.html](moodys.html)),
   **RadCode** ([radcode.html](radcode.html)), and **Chloé**
   ([chloe.html](chloe.html)), sourced from `cv-master.md`. RadCode split out
   of the Moody's page (2026-08-19): Moody's stays a client case study,
   RadCode is the separate rapid-prototyping / AI-tooling practice piece that
   grew out of that engagement, framed as personal R&D rather than a client
-  deliverable. The two link to each other. Chanel and Richemont cards on the
-  home page are marked "Case study coming soon" until their pages are
-  written.
+  deliverable. The two link to each other. Chanel card on the home page is
+  marked "Case study coming soon" until its page is written.
+- ⏳ **Richemont archived** (2026-08-20): its "coming soon" card and the
+  now-empty `e-commerce` filter pill are removed from the home page for now.
+  The card markup, its assets (`assets/projects/richemont/`), and the
+  filter button are recoverable from git history whenever the case study
+  is picked back up.
 - ✅ **About photo**: real photobooth strip at
   `assets/about/photobooth.png`, right-aligned next to the intro paragraph.
 - ✅ **Tag pills**: Moody's card/case-study uses an `AI` tag instead of
@@ -33,7 +37,7 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
 - ⏳ **"Download resume" button removed** for now, since there's no resume
   PDF in the repo yet. Re-add once `resume.pdf` exists (see `.btn` in
   `index.html`'s about section).
-- ⏳ Chanel and Richemont case study pages, not built yet.
+- ⏳ Chanel case study page, not built yet.
 - ⏳ Off-White and Foursource have no imagery yet, add project cards for
   them once assets exist.
 - ✅ **Moody's case study images** (2026-08-20): the three `.case-placeholder`
@@ -104,11 +108,11 @@ locally, just push, then refresh the live URL above.
 
 ## Next session
 
-- Push the pending Moody's image commit to `main` when ready (currently
-  committed locally only, not yet on the live site)
 - Resume PDF + re-add the "download resume" button
-- Chanel and Richemont case study pages
-- A second image per brand for Chloé/Chanel/Richemont, to restore the
+- Chanel case study page
+- A second image per brand for Chloé/Chanel, to restore the
   `.case-media` section in each case study page (Moody's now has its own
   real screenshots, done 2026-08-20)
 - Add Off-White and Foursource cards once assets are in Figma
+- Richemont is archived (see Status); revisit whenever there's material
+  for a real case study
