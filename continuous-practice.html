@@ -62,8 +62,11 @@
     <p>The product scope set hard requirements no static comp could satisfy: every answer had to show its sources, expose the logic behind it, and never settle for a paragraph of text when a table, chart, or map answered the question better. That&rsquo;s exactly why this was worth prototyping in code instead of as flat Figma screens. A click-through can fake a chat bubble, but it can&rsquo;t fake a real source citation, or a result that legitimately renders as a map in one exchange and a table in the next. The only way to know if the format actually held up was to build something that really worked.</p>
 
     <div class="case-media">
-      <img src="assets/projects/continuous-practice/chat-interface-laptop.png" alt="A genericized recreation of the conversational AI interface prototype, shown open on a laptop: a user question, an answer with a data table, a source count, and an underlying-query disclosure link.">
+      <video autoplay loop muted playsinline poster="assets/projects/continuous-practice/chat-interface-poster.png" aria-label="A quick recording of the conversational AI interface: the home screen with example prompt cards, a question submitted, and the assistant running the query.">
+        <source src="assets/projects/continuous-practice/chat-interface-loop.mp4" type="video/mp4">
+      </video>
     </div>
+    <p class="case-media-caption">A real recording of the prototype: the home screen, an example prompt selected, and the assistant running the query. Trimmed before the response, to keep the underlying analysis out of a public case study.</p>
 
     <h3>How it was built</h3>
     <p>Composed entirely from existing design-system components, deliberately: no need to invent or hardcode anything new. Where the official system didn&rsquo;t yet cover something the interface needed, I could reach into Proto Core, a supplementary component layer built to hold the gaps the official system hasn&rsquo;t caught up to yet, so a prototype never has to fake a pattern that doesn&rsquo;t exist. Every spacing, color, and type value came from the same design tokens production code pulls from, nothing hand-picked. That discipline wasn&rsquo;t optional: it&rsquo;s a real constraint of building on this platform. An AI coding assistant only stays trustworthy when it&rsquo;s steered toward the real system already in place, official components first, Proto Core where needed, tokens throughout, rather than left to improvise its own.</p>

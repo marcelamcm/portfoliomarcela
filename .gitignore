@@ -6,3 +6,9 @@ Thumbs.db
 # in the case study pages themselves.
 assets/projects/moodys/case studies 2025.pdf
 assets/projects/chloe/chloe_case_study.html
+
+# Raw screen recordings: real product UI, includes portions (analysis IDs,
+# dollar figures) that were deliberately trimmed out of the published loop.
+# Only the trimmed, cleared derivative (chat-interface-loop.mp4) is public.
+assets/projects/continuous-practice/RDL AI Agent.mov
+assets/projects/moodys/RDL AI Agent.mov

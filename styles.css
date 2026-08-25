@@ -508,7 +508,7 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(155deg, var(--bg-alt) 0%, var(--bg-alt-2) 100%);
   box-shadow: inset 0 0 0 1px rgba(243, 239, 228, 0.06);
 }
-.case-media img {
+.case-media img, .case-media video {
   width: 100%; height: auto; display: block; border-radius: 10px;
   box-shadow: 0 24px 56px -24px rgba(0, 0, 0, 0.6);
 }
@@ -521,9 +521,12 @@ img { max-width: 100%; display: block; }
 .case-media-row .case-media { margin: 0; }
 @media (max-width: 640px) { .case-media-row { grid-template-columns: 1fr; } }
 
-/* Sits directly under a .case-media / .case-media-row to cite a public
-   source (e.g. a shipped feature announcement) backing the claim above it. */
-.case-media-caption {
+/* Sits directly under a .case-media / .case-media-row: a small caption
+   explaining the media, or citing a public source (e.g. a shipped feature
+   announcement) backing the claim above it. Scoped under .case-body since
+   a bare .case-media-caption loses to the higher-specificity .case-body p
+   rule above. */
+.case-body .case-media-caption {
   font-size: 12.5px; color: var(--fg-faint); text-align: center; margin: -22px 0 28px;
 }
 .case-media-caption a { color: var(--periwinkle); text-decoration: underline; text-underline-offset: 2px; }
