@@ -391,16 +391,22 @@ img { max-width: 100%; display: block; }
 .case-accordion .acc-block { margin-bottom: 22px; }
 
 .case-body { max-width: 860px; margin: 0 auto; padding: 0 28px 100px; }
+/* h2 = a new top-level section: a hairline + extra air above it marks the
+   chapter break unambiguously, so it can't be mistaken for a sub-heading
+   of whatever came before it. */
 .case-body h2 {
-  font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.01em;
-  margin: 56px 0 18px;
+  font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: -0.01em;
+  margin: 96px 0 20px; padding-top: 44px; border-top: 1px solid var(--border);
 }
-.case-body h2:first-child { margin-top: 0; }
+.case-body h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+/* h3 = a sub-heading inside the h2 section above it: deliberately closer in
+   size and color to body copy than to h2, so it reads as "part of this
+   section" rather than a peer of it. */
 .case-body h3 {
-  font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.005em;
-  color: var(--fg); margin: 36px 0 14px;
+  font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.01em;
+  color: var(--fg-dim); margin: 30px 0 10px;
 }
-.case-body h3:first-of-type { margin-top: 8px; }
+.case-body h3:first-of-type { margin-top: 10px; }
 .case-body .lead-in {
   font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-faint);
   font-weight: 600; margin: 22px 0 10px;

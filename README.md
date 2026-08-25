@@ -37,6 +37,27 @@ Live: https://marcelamcm.github.io/portfoliomarcela/
   rendered to PNG via headless Chrome, and composited into a CSS-built
   laptop frame (`assets/projects/continuous-practice/*-laptop.png`). No real
   Moody's screens, branding, or copy are reproduced anywhere on the page.
+- ✅ **Continuous Practice rewritten** (2026-08-25): full content rewrite,
+  reframed after Marcela talked it through with a colleague. The page now
+  splits credit explicitly: the initiative itself, and the documentation /
+  catalog / lint-layer work under "How the design team works now," stay in
+  the collective "we"; everything from "Getting in" onward (onboarding,
+  proving out the conversational-AI prototype, testing it with clients)
+  is framed as Marcela's individual contribution. New section order: At a
+  glance (stats) → Why this exists → Getting in → Proving it: a
+  conversational AI interface (How it was built / Ship rough, validate,
+  then polish) → How the design team works now → What changed, and what's
+  still open. Reuses existing components throughout (`case-stats`,
+  `case-chip-group`, `case-callout`, `case-media`), no new CSS added for
+  the content itself. Timeline field reads "Ongoing since Jan 2026."
+- ✅ **Case study heading hierarchy fixed** (2026-08-25): `.case-body h2`/`h3`
+  restyled site-wide (in `styles.css`) after the new h3 sub-headings on the
+  Continuous Practice page read as siblings of the h2s instead of children.
+  h2 now gets a hairline `border-top` plus more margin above it (a full
+  chapter break); h3 dropped to 15px, weight 600, muted body-text color, so
+  it sits visually inside its parent section. Section gaps were widened
+  further on request. Only Continuous Practice uses h3 today, but the rule
+  applies to Moody's and Chloé's h2s too.
 - ⏳ **Richemont archived** (2026-08-20): its "coming soon" card and the
   now-empty `e-commerce` filter pill are removed from the home page for now.
   The card markup, its assets (`assets/projects/richemont/`), and the
